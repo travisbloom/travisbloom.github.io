@@ -1,0 +1,70 @@
+body {
+background-color:#FFFFFF;
+}
+
+#main {
+position: absolute;
+height:920px;
+width: 100%;
+background-image: url('../images/main/background.jpg');
+background-repeat:no-repeat;
+background-position:center; 
+background-size:1300px 1955px;
+box-shadow:inset 90px 0px 60px #FFFFFF,
+inset -90px 0px 60px #FFFFFF;
+}
+
+.centering {
+height:30px;
+}
+
+#description a {
+color:#6f9abd;
+}
+
+#descriptionbox {
+background-color: black;
+opacity: .8;
+height:190px;
+width: 300px;
+position:absolute;
+box-shadow: 0px 0px 100px #888888;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+
+}
+
+#description {
+left:7px;
+top: 7px;
+font-size: 15px;
+opacity: 1.0;
+color: white;
+text-align:left;
+letter-spacing: .5px;
+padding-left: 10px;
+position:relative;
+}
+
+.socialmedia {
+height:50px;
+width:50px;
+padding-right: 15px; 
+}
+
+@media screen and (max-width: 1300px) {
+
+#main {
+box-shadow:inset 3px 0px 100px #FFFFFF,
+inset -3px 0px 100px #FFFFFF;
+}
+
+@media screen and (max-width: 1700px) {
+
+#main {
+box-shadow:inset 20px 0px 100px #FFFFFF,
+inset -20px 0px 100px #FFFFFF;
+}
+
+}

@@ -1,0 +1,44 @@
+
+h1 {
+text-align:center;
+font-size:70px;
+margin:0px;
+}
+
+h2 {
+text-align: center;
+font-weight: normal;
+font-size: 17px;
+
+}
+
+h3 {
+text-align: center;
+font-variant:small-caps;
+font-size: 22px;
+letter-spacing: 6px;
+}
+
+.sections {
+
+}
+
+.date{
+font-style: italic;
+}
+
+.position{
+font-weight:bold;
+font-size: 12px;
+}
+
+
+.org{
+font-weight:bold;
+font-size: 14px;
+}
+
+span {
+font-style:italic;
+font-size: 11px;
+}

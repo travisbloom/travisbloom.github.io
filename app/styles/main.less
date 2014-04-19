@@ -1,0 +1,408 @@
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@icon-font-path: "../fonts/glyphicons/";
+
+/** transition **/
+.transition(@args:200ms) {
+-webkit-transition: @args;
+-moz-transition: @args;
+-o-transition: @args;
+transition: @args;
+}
+.border-radius(@args) {
+-webkit-border-radius: @args;
+-moz-border-radius: @args;
+border-radius: @args;
+}
+.box-shadow(@args) {
+-webkit-box-shadow: @args;
+-moz-box-shadow: @args;
+box-shadow: @args;
+}
+.blur(@args){
+filter: blur(@args);
+-webkit-filter: blur(@args);
+-moz-filter: blur(@args);
+-o-filter: blur(@args);
+-ms-filter: blur(@args);
+}
+
+@black: #696969 ;
+/********************************
+********Page Styles**************
+********************************/
+html, body{
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+{
+	font-family: 'Lato', sans-serif;
+}
+#accordion{
+}
+
+.contaner{
+}
+
+a{
+	color:#3989C9;
+	&:hover{
+			text-decoration: none;
+		}
+}
+
+/********************************
+********Header Styles************
+********************************/
+#headerHolder{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height:45px;
+	z-index: 10;
+	#header{
+		padding:0px 10px;
+		#headerClick {
+			float:left;
+			margin-right: 15px;
+			img{
+				height:40px;
+			width:auto;
+			opacity: 0.7;
+			}
+
+		}
+		#headerText{
+			text-align: left;
+			font-size: 30px;
+			font-family: 'Lobster Two', sans-serif;
+			color:@black;
+
+		}
+	}
+}
+.headerScroll{
+	background-color: white;
+	.transition(all .2s ease-in);
+	a{
+	}
+}
+
+.clean{
+	background-color: none;
+	color: black;
+	.transition(all .2s ease-in);
+}
+/********************************
+********Nav Styles**************
+********************************/
+#intro{
+	text-align: center;
+	font-weight: 300;
+	color: @black;
+	h1{
+		font-size: 60px;
+		padding-top: 30px;
+	}
+	h2{
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+#iconBox{
+	text-align: center;
+	margin: 50px 0 0px 0;
+	#circle1{
+		background:  url('../images/purpleCircle.png') no-repeat top; 
+		background-size:100% auto ;
+
+	}
+	#circle2{
+		background:  url('../images/greenCircle.png') no-repeat top; 
+		background-size:100% auto ;
+	}
+	#circle3{
+		background:  url('../images/blueCircle.png') no-repeat top; 
+		background-size:100% auto ;
+	}
+	.navIcon{
+		cursor: pointer;
+		.iconImg{
+			position: relative;
+			top: 10px;
+			width: 80%;
+			opacity: 1;
+			.transition(all .2s ease-out);
+		}
+		.iconText{
+			position: relative;
+			top: -30px;
+			width: 80%;
+			opacity: 0;
+			.transition(all .2s ease-out);
+		}
+		&:hover {
+			.iconImg{
+				top:-135px;
+				opacity: 0;
+				.transition(all .2s ease-out);
+			}
+			.iconText{
+				top:-110px;
+				opacity: 1;
+				.transition(all .2s ease-out);
+			}
+		}
+	}
+}
+.panel-group {
+	.panel {
+		border:none;
+	}
+}
+/********************************
+********Section Styles********
+********************************/
+.fixedimg{ 
+	padding: 200px 0;
+	position:relative;
+	.imgdesc{
+		position:absolute;
+		bottom: 0;
+		right: 0;
+		padding: 5px 15px 5px 5px;
+		font-size: 14px;
+		font-style: italic;
+		color:white;
+		opacity:.4;
+		&:hover{
+			opacity: 1;
+			font-size: 15px;
+			background: rgba(0, 0, 0, .6);	
+		}
+	}
+	.itemtext{
+	    background: rgb(0, 0, 0); /* Fall-back for browsers that don't support rgba */
+	    background: rgba(0, 0, 0, .8);	
+	    color: white;
+	    padding: 25px 25px;
+   		.border-radius(25px);
+   		font-size: 25px;
+   		font-weight: 300;
+   		a{
+   			color:#9CC4E4;
+   			   		font-weight: 300;
+   		}
+   		h3{
+   			font-size: 35px;
+   			font-weight: 300;
+   			margin-bottom: 20px;
+   		}
+   		.date{
+   			text-align: right;
+   			font-style: italic;
+   			font-weight: 100;
+   		}
+	}
+
+}
+
+/********************************
+***Section Specific Styles*******
+********************************/
+.background00{
+background: url('../images/sections/0_0.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+.background01{
+background: url('../images/sections/0_0.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+.background02{
+background: url('../images/sections/0_0.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+.background10{
+background: url('../images/sections/1_0.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+.background11{
+background: url('../images/sections/1_1.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+.background12{
+background: url('../images/sections/1_2.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+.background20{
+background: url('../images/sections/2_0.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+.background21{
+background: url('../images/sections/2_1.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+
+/********************************
+********#Side Page Styles********
+********************************/
+
+#nav-page {
+	font-family: 'Lobster Two', sans-serif;
+	position: fixed;
+	z-index: 1;
+	left: 0px;
+	height:100%;
+	width: 150px;
+	line-height: 50px;
+	box-shadow: inset -1px 0px 27px -4px rgba(0, 0, 0, .1) ;
+
+	#nav-box {
+	position: relative;
+	z-index: 2;
+	text-align: right;
+	font-size:30px;
+	margin: 80px 10px 10px 5px;
+	#nav-text{
+		position: relative;
+	z-index: 3;
+	}
+	}
+}
+
+
+.page {
+position: absolute;
+background-color: white;
+width: 100%;
+	overflow-x: hidden;
+z-index: 4;
+left: 0px;
+.transition(all .6s ease-out);
+	&.nav-animation {
+	left: 150px;
+}
+}
+
+@media (max-width:1200px) {
+	#iconBox{
+		.navIcon{
+			&:hover{
+			.iconText{
+				top:-90px;
+				opacity: 1;
+				.transition(all .2s ease-out);
+				}
+			}
+		}
+	}
+}
+@media (max-width:991px) {
+	#iconBox{
+		.navIcon{
+			&:hover{
+			.iconText{
+				top:-150px;
+				opacity: 1;
+				.transition(all .2s ease-out);
+				}
+			}
+		}
+
+	}
+			#intro{
+		h2{
+		line-height: normal;
+		}
+	}
+	.fixedimg{
+		.itemtext{
+			font-weight: 300;
+		}
+	}
+}
+@media (max-width:660px) {
+	#iconBox{
+		.navIcon{
+			&:hover{
+			.iconText{
+				top:-100px;
+				opacity: 1;
+				.transition(all .2s ease-out);
+				}
+			}
+		}
+	}
+	.fixedimg{
+	.itemtext{
+   		font-weight: 100;
+}
+}
+}
+@media (max-width:480px) {
+	#iconBox{
+		.navIcon{
+			&:hover{
+			.iconText{
+				top:-70px;
+				opacity: 1;
+				.transition(all .2s ease-out);
+				}
+			}
+		}
+	}
+}
+
+@media (max-width:380px) {
+	#iconBox{
+		.navIcon{
+			&:hover{
+			.iconText{
+				top:-50px;
+				opacity: 1;
+				.transition(all .2s ease-out);
+				}
+			}
+		}
+	}
+	#intro{
+	h1{
+	font-size: 44px;
+}
+}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+
+.fixedimg{
+	.itemtext{
+   		font-weight: 100;
+}
+}
+}

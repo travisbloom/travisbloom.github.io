@@ -1,13 +1,13 @@
 //Header Scroll Effect
 $('#iconBox').waypoint(function(direction) {
-	$("#headerText").text(OpenSection);
-	if (direction === "up"){
-		$("#headerText").text("");
-		$("#headerHolder").removeClass().addClass("clean");
-	}
-	else{
-		$("#headerHolder").removeClass().addClass("headerScroll");
-	}
+    $("#headerText").text(OpenSection);
+    if (direction === "up"){
+        $("#headerText").text("");
+        $("#headerHolder").removeClass().addClass("clean");
+    }
+    else{
+        $("#headerHolder").removeClass().addClass("headerScroll");
+    }
 
 });
 //sets the top text to the section name
@@ -17,14 +17,14 @@ $( ".navIcon" ).click(function() {
 });
 //moves down the page the first time a section is clicked
 $( ".navIcon" ).one( "click", function() {
-        var n = $(document).height();
+    var n = $(document).height();
     $('html, body').animate({ scrollTop: 500 }, 500);
 });
 
 //toggles the animation class for the sidebar
 $("#headerClick").click(function() {
-	$(".page").toggleClass("nav-animation");
-}); 
+    $(".page").toggleClass("nav-animation");
+});
 
 //prevents default click actions from occuring
 $('.stopJump').click(function(e) {

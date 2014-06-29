@@ -26,14 +26,26 @@ $("#headerClick").click(function() {
 	$(".page").toggleClass("nav-animation");
 }); 
 
-$('.stopJump').click(function(e)
-{
+//prevents default click actions from occuring
+$('.stopJump').click(function(e) {
     e.preventDefault();
 });
 
+//attaches the fastClick plugin to the body, improving mobile responsiveness
 $(function() {
     FastClick.attach(document.body);
 });
+
+//adds the backstretch image to each section
+//for (var i = 0; i < storyData.length; i++) {
+//    console.log(storyData.length);
+//    console.log(storyData[i]);
+//    for (var x = 0; i < storyData[i].length; i++) {
+//        console.log(storyData[i].length);
+//        console.log('trig');
+//        $('#background' + x + i).backstretch('../images/sections/' + x + '_' + i + '.jpg');
+//    }
+//}
 
 Handlebars.registerHelper('setParentIndex', function(value){
     this.index = Number(value); //I needed human readable index, not zero based
@@ -41,5 +53,4 @@ Handlebars.registerHelper('setParentIndex', function(value){
 var source   = $("#stories").html();
 
 var template = Handlebars.compile(source);
-
 $('.panel-group').append(template(storyData));

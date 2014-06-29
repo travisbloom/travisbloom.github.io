@@ -6209,6 +6209,13 @@ a:hover {
   -o-background-size: cover;
   background-size: cover;
 }
+.background03 {
+  background: url('../images/sections/0_3.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .background10 {
   background: url('../images/sections/1_0.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -6239,6 +6246,13 @@ a:hover {
 }
 .background21 {
   background: url('../images/sections/2_1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.background22 {
+  background: url('../images/sections/2_2.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

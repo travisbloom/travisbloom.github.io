@@ -40,8 +40,6 @@ Handlebars.registerHelper('setParentIndex', function(value){
 });
 var source   = $("#stories").html();
 
-console.log(storyData);
 var template = Handlebars.compile(source);
-console.log(template(storyData));
 
 $('.panel-group').append(template(storyData));

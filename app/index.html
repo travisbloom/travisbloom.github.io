@@ -1,4 +1,9 @@
 <!doctype html>
+  <!--**********************************************************************
+  **************************************************************************
+  *******Feel free to check me out on twitter at @TravisBloom***************
+  **************************************************************************
+  ***********************************************************************-->
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -10,7 +15,7 @@
   <meta property="image" content="apple-touch-icon.png" />
   <title>Travis Bloom</title>
   <link rel="icon" type="image/png" href="favicon.ico">
-  <meta name="description" content="The personal website of @TravisBloom, a wannabe web designer, aspiring IT professional, and full time tech geek.">
+  <meta name="description" content="The personal website of @TravisBloom, a web developer, IT professional, and wannabe tech blogger.">
   <meta name="author" content="Travis Bloom">
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300|Lobster+Two' rel='stylesheet' type='text/css'>
 
@@ -110,36 +115,34 @@
         <div class="fixedimg background{{../index}}{{@index}} test">
           {{#if imgDesc}}
           <div class="imgdesc">
-            {{imgDesc}}
+            {{{imgDesc}}}
           </div>
           {{/if}}
           <div class="container">
             <div class="itemtext col-md-8 col-md-offset-2">
               <!-----adds title present---->
               {{#if title}}
-              {{#if date}}
-              <div class="row">
-               <div class="col-xs-6">
-                <h3>{{title}}</h3>
+                {{#if date}}
+                  <div class="row">
+                   <div class="col-xs-6">
+                    <h3>{{title}}</h3>
+                  </div>
+                  <div class="col-xs-6 date">
+                    <h3>{{date}}</h3>
+                  </div>
+                </div>
+                {{else}}
+                  <div class="row">
+                    <h3>{{title}}</h3>
+                </div>
+                {{/if}}
+              {{else}}
+                {{#if date}}
+                <div class="row">
+                  <h3>{{date}}</h3>
               </div>
-              <div class="col-xs-6 date">
-                <h3>{{date}}</h3>
-              </div>
-            </div>
+                {{/if}}
             {{/if}}
-            {{#else}}
-              <div class="row">
-                <h3>{{title}}</h3>
-            </div>
-            {{/else}}
-            {{/if}}
-            {{#else}}
-              {{#if date}}
-              <div class="row">
-                <h3>{{date}}</h3>
-            </div>
-              {{/if}}
-            {{/else}}
             <div class="row">
               <p>{{{text}}}</p>
             </div>

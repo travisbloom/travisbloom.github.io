@@ -3,9 +3,13 @@ var storyData = [
   [
     {
     'title': 'ITLP',
-    'date': '2013',
+    'date': '2013 - Current',
     'imgDesc' : 'My team\'s final pitchout for the case study. We earned <a href="http://instagram.com/p/chefBfHLLW/">top honors</a> for our solution.',
     'text': 'I began working for GE\'s <a href="http://www.ge.com/careers/culture/recruiting-development/information-technology-leadership-program/united-states"> Information Technology Leadership Program</a> in June 2013. The program lets recent graduates work four jobs over two years in a variety of IT roles. The first four weeks were spent participating in a case study with over 100 other ITLPs where we developed a Business Intelligence reporting solution for one of GE\'s businesses.'
+    },
+        {
+    'title': 'Front-End Web Developer',
+    'text': 'This rotation I\'m working as a software engineer, building out a new home page for GE\'s 300,000+ employees. Our team develops using the <a href="http://code.tutsplus.com/tutorials/introduction-to-the-mean-stack--cms-19918">MEAN</a> stack, with a focus on test driven development. My various projects include building out unit tests and additional modules for one of the largest implementations of Angular.js in the world.'
     },
     {
     'title': 'ServiceNow COE Project Manager',
@@ -17,7 +21,7 @@ var storyData = [
     'title': 'ITLP Intern',
     'date': 'Summer 2012',
     'text': 'Prior to my fulltime offer I interned for the program in Trevose, PA. I spent the summer working within <a href="http://www.itlpblog.com/2012/07/30/collaboration-in-a-global-company/">GE\'s Global Infrastructure Services on IP phone systems.</a> My main project involved managing the integration of a solution that enabled self-service password reset functionality for our customers.</p>' +
-            '<p>In addition, I also designed a new interface for my team\'s internal portal and developed a frontend for a referential web service.'
+            '<p>In addition, I also designed a new interface for my team\'s internal portal and developed a front-end for a referential web service.'
     }
   ],
   //Section 1
@@ -37,16 +41,20 @@ var storyData = [
   //Section 2
   [
     {
-    'title': 'travisbloom.me',
-    'text': 'My interest in web design/development started during my Sophomore year of college. I used online tools like <a href="http://teamtreehouse.com/home">Team Treehouse</a> and <a hreg="http://www.codecademy.com/">Codeacademy</a> to teach myself the basics of HTML, CSS, and Javascript. You can see my earliest attempt at building a site <a href="Old/travisbloom.me_Dec_2011/index.html">here</a> (circa 2011) and a more recent version from earlier this year <a href="Old\\travisbloom.me _Sept_2013\\index.html">here</a>.</p> ' +
-            '<p> This most recent responsive version of travisbloom.me was built using Bootstrap 3, JQuery, and Waypoints.js. Handlebars.js is used to easily update stories and add new content to the respective sectons. The fonts used, Lato and Lobster 2, can be found on <a href="http://www.google.com/fonts">Google Fonts</a>. All images/graphics used on the site were taken and created by me.'
-    },
-    {
     'title': 'MyEasyClass.com',
     'text': 'For my honors thesis at UConn I developed and launched my own web app. Semester after semester, when course registration opened up, my newsfeed got spammed with friends asking the same question, "What are some easy Gen Eds to fill my schedule for next semester?" Offerings like RateMyProfessors.com were great if you already knew what class you wanted to look at, but there was no easy way for my peers to see top ranked courses at UConn: MyEasyClass was built to fill this need.</p>' +
-        '<p>The website was built using <a href="https://parse.com/">Parse</a> as a back end and Bootstrap. The site launched right before courses registration opened during Spring 2013: it got more than 2,700 pageviews and 1,200 unique visitors over the course of the first month. During class registration the following fall, MyEasyClass had 5,200+ pageviews and 3,200 unique visitors. </p>' +
+        '<p>The site, my first attempt at building a dynamic web app, was created using JQuery, Bootstrap, and <a href="https://parse.com/">Parse</a>. It launched right before courses registration opened during Spring 2013 and got more than 2,700 pageviews/1,200 unique visitors over the course of the first month. During class registration the following fall, MyEasyClass had 5,200+ pageviews and 3,200 unique visitors. </p>' +
         '<p>Putting this in to perspective, more than 20% of UConn\'s undergraduate population used the site in the fall of 2013.'
-      }
+      },
+            {
+    'title': 'BloomTrends',
+    'text': 'I\'ve been an avid reader of technology news (<a href="http://www.theverge.com/">The Verge</a>, <a href="http://techmeme. com/">Techmeme</a>, and <a href="https://news.ycombinator.com/">Hacker News</a> are just a few of my favorites) since 2009 and occasionally comment on the industry on my blog, <a href="http://blog.travisbloom.me/">BloomTrends</a>. The site\'s content includes interesting quotes from opinion pieces, video reviews of new products, and even some <a href="http://blog.travisbloom.me/tagged/Original_Posts">original content</a> I\'ve written. </p><p>Although my readership is small, some of my pieces have been featured on the <a href="http://blog.travisbloom.me/post/41131590321">front page</a> of Hacker News.'
+    },
+      {
+    'title': 'travisbloom.me',
+    'text': 'My interest in web design/development started during my Sophomore year of college. I used online tools like <a href="http://teamtreehouse.com/home">Team Treehouse</a> and <a hreg="http://www.codecademy.com/">Codeacademy</a> to teach myself the basics of HTML, CSS, and Javascript. You can see my earliest attempt at building a site <a href="Old/travisbloom.me_Dec_2011/index.html">here</a> (circa 2011) and a more recent version from earlier this year <a href="Old\\travisbloom.me _Sept_2013\\index.html">here</a>.</p> ' +
+            '<p> This most recent responsive version of travisbloom.me was built using Bootstrap 3, JQuery, and Waypoints.js. Handlebars.js is used to easily update stories and add new content to the respective sections. The fonts used, Lato and Lobster 2, can be found on <a href="http://www.google.com/fonts">Google Fonts</a>. All images/graphics used on the site were taken and created by me.'
+    }
   ]
     
 ];

@@ -6027,6 +6027,7 @@ a:hover {
   position: fixed;
   top: 0px;
   width: 100%;
+  background-color: white;
   height: 45px;
   z-index: 10;
 }
@@ -6287,6 +6288,7 @@ a:hover {
   background-color: white;
   width: 100%;
   overflow-x: hidden;
+  height: 100%;
   z-index: 4;
   left: 0px;
   -webkit-transition: all 0.6s ease-out;

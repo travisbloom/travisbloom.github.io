@@ -19,7 +19,17 @@ gulp.task('jshint', function () {
     .pipe($.jshint.reporter('fail'));
 });
 
-gulp.task('html', ['styles'], function () {
+  gulp.task('templates', function () {
+    return gulp.src('app/templates/**/*.hbs')
+      .pipe($.handlebars())
+      .pipe($.defineModule('plain'))
+      .pipe($.declare({
+        namespace: 'category.templates' // change this to whatever you want
+      }))
+      .pipe(gulp.dest('.tmp/templates'));
+  });
+
+gulp.task('html', ['styles', 'templates'], function () {
   var assets = $.useref.assets({searchPath: '{.tmp,app}'});
 
   return gulp.src('app/*.html')
@@ -60,7 +70,7 @@ gulp.task('extras', function () {
 
 gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 
-gulp.task('connect', ['styles'], function () {
+gulp.task('connect', ['styles', 'templates'], function () {
   var serveStatic = require('serve-static');
   var serveIndex = require('serve-index');
   var app = require('connect')()
@@ -104,10 +114,12 @@ gulp.task('watch', ['connect'], function () {
     'app/*.html',
     '.tmp/styles/**/*.css',
     'app/scripts/**/*.js',
+    '.tmp/templates/**/*.js',
     'app/images/**/*'
   ]).on('change', $.livereload.changed);
 
   gulp.watch('app/styles/**/*.less', ['styles']);
+  gulp.watch('app/templates/**/*.hbs', ['templates']);
   gulp.watch('bower.json', ['wiredep']);
 });
 

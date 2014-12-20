@@ -13,7 +13,7 @@
     <meta property="image" content="apple-touch-icon.png" />
     <title>Travis Bloom</title>
     <link rel="icon" type="image/png" href="favicon.ico">
-    <meta name="description" content="The personal website of @TravisBloom, a web developer, IT professional, and wannabe tech blogger.">
+    <meta name="description" content="The personal website of Travis Bloom, a full stack engineer working at General Electric.">
     <meta name="author" content="Travis Bloom">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300|Lobster+Two' rel='stylesheet' type='text/css'>
 
@@ -28,7 +28,7 @@
 <body>
 <!-- to associate this site with my Google+ Account on search results-->
 <a href="https://plus.google.com/107934867984232167311?rel=author" style="display:none;">Travis Bloom</a>
-<!--[if lt IE 11]>
+<!--[if lt IE 9]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
 <!--****************************************************************
@@ -50,6 +50,7 @@
     <a href="#" id="aside-toggle"></a>
     <span id="section-text">Travy</span>
 </header>
+
 <main class="container-fluid">
     <!--****************************************************************
     *************************Intro**************************************
@@ -89,71 +90,11 @@
             </div>
         </div>
     </section>
-        <!--sections-->
     </div>
-    <div class="panel-group" id="accordion">
-        <!--****************************************************************
-        ********************************************************************
-        *************************Section ***********************************
-        ********************************************************************
-        ********************************************************************-->
-        <script id="stories" type="text/x-handlebars-template">
-            {{#each this}}
-            {{setParentIndex @index}}
-            <div class="panel">
-                <div id="section{{@index}}" data-parent="#accordion" class="collapse">
-                    {{#each this}}
-                    <div class="fixedimg background{{../index}}{{@index}} test">
-                        {{#if imgDesc}}
-                        <div class="imgdesc">
-                            {{{imgDesc}}}
-                        </div>
-                        {{/if}}
-                        <div class="container">
-                            <div class="itemtext col-md-8 col-md-offset-2">
-                                <!-----adds title present---->
-                                {{#if title}}
-                                {{#if date}}
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <h3>{{title}}</h3>
-                                    </div>
-                                    <div class="col-xs-6 date">
-                                        <h3>{{date}}</h3>
-                                    </div>
-                                </div>
-                                {{else}}
-                                <div class="row">
-                                    <h3>{{title}}</h3>
-                                </div>
-                                {{/if}}
-                                {{else}}
-                                {{#if date}}
-                                <div class="row">
-                                    <h3>{{date}}</h3>
-                                </div>
-                                {{/if}}
-                                {{/if}}
-                                <div class="row">
-                                    <p>{{{text}}}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {{/each}}
-                </div>
-            </div>
-            {{/each}}
-        </script>
-
+    <div class="panel-group row" id="categories-container">
+        <!--stories are injected in here using handlebars-->
     </div>
 </main>
-
-
-<!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -176,8 +117,9 @@
 <!-- endbuild -->
 
 <!-- build:js scripts/main.js -->
-<script src="scripts/main.js"></script>
+<script src="templates/story.js"></script>
 <script src="scripts/stories.js"></script>
+<script src="scripts/main.js"></script>
 <!-- endbuild -->
 </body>
 </html>

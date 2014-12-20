@@ -17,25 +17,23 @@ $(function() {
     $("header").toggleClass("show-aside");
     $("main").toggleClass("show-aside");
   });
-  //Header Scroll Effect
-  $('#iconBox').waypoint(function(direction) {
-    $("#headerText").text(openSection);
-    if (direction === "up"){
-      $("#headerText").text("");
-      $("#header-holder").removeClass().addClass("clean");
-    }
-    else{
-      $("#header-holder").removeClass().addClass("headerScroll");
-    }
-  });
+//  //Header Scroll Effect
+//  $('.category-headers').waypoint(function(direction) {
+//    $("#headerText").text(openSection);
+//    if (direction === "up"){
+//      $("#headerText").text("");
+//      $("#header-holder").removeClass().addClass("clean");
+//    }
+//    else{
+//      $("#header-holder").removeClass().addClass("headerScroll");
+//    }
+//  });
 
 
   Handlebars.registerHelper('setParentIndex', function(value) {
     this.index = Number(value); //I needed human readable index, not zero based
   });
-  //compile handlebars template
-  var template = Handlebars.compile($("#stories").html());
   //inject each panel group with the template
-  $('.panel-group').append(template(storyData));
+  $('.panel-group').append(category.templates.story(storyData));
 });
 

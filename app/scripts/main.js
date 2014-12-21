@@ -8,11 +8,6 @@ $(function() {
     //capitalize the first letter and add it to the header section span
     $('#section-text').html(section[0].toUpperCase() + section.slice(1));
   });
-  //toggles the animation class for the sidebar
-  $('#aside-toggle').click(function(e) {
-    e.preventDefault();
-    $('header, main').toggleClass('show-aside');
-  });
   //moves down the page the first time a section is clicked
   $( '.category-header' ).one( 'click', function() {
       $('html, body').animate(
@@ -22,8 +17,21 @@ $(function() {
  //show header items on scroll
   $('#categories-container').waypoint({
     handler: function(direction) {
-      console.log(direction);
       $('header').toggleClass('scrolling');
     }
+  });
+  //toggles the animation class for the sidebar
+  $('#aside-toggle').click(function(e) {
+    e.preventDefault();
+    $('header, main').toggleClass('show-aside');
+  });
+  //add the sidebar event to swipes
+  $(document.body).on("swipeleft", function() {
+    if ($('main').hasClass('show-aside'))
+      $('header, main').removeClass('show-aside');
+  });
+  $(document.body).on("swiperight", function() {
+    if (!$('main').hasClass('show-aside'))
+      $('header, main').addClass('show-aside');
   });
 });

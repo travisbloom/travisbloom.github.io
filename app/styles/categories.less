@@ -1,0 +1,134 @@
+.category-headers {
+  margin-top: 50px;
+  //paint all the respective category headers their color
+  .col-xs-4 {
+    &:nth-of-type(1) > div {
+      background-color: #a967aa;
+    }
+    &:nth-of-type(2) > div {
+      background-color: #6dc065;
+    }
+    &:nth-of-type(3) > div {
+      background-color: #3989c9;
+    }
+  }
+  .category-header {
+    cursor: pointer;
+    //creates a circle for the background
+    border-radius: 50%;
+    position: relative;
+    //prevent from expanding too large with screen size
+    max-width: 135px;
+    //keep div centered if it hits max width
+    margin: 0 auto;
+    //ensure the div stays at a 1:1 ratio, regardless of width
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+    //initial image shown
+    .icon-img, .icon-text {
+      width: 90%;
+      height: 90%;
+      position: absolute;
+      //keep icon centered
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      transition: all .1s ease-in;
+    }
+    .icon-img {
+      top: 6px;
+      opacity: 1;
+    }
+    .icon-text {
+      opacity: 0;
+      top: 66px;
+    }
+    &:hover {
+      .icon-img {
+        top: -66px;
+        opacity: 0;
+      }
+      .icon-text {
+        top: 6px;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+#categories-container {
+  margin-top: 30px;
+  section.panel {
+    //remove default bootstrap panel stylings
+    border: none;
+    margin-bottom: 0px;
+    background-color: inherit;
+    border-radius: 0px;
+    box-shadow: none;
+    article {
+      padding: 200px  0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      position: relative;
+      @media (max-width: @screen-xs-max) {
+        padding: 100px  0;
+      }
+      figcaption {
+        position:absolute;
+        bottom: 0;
+        right: 0;
+        border-top-left-radius: 5px;
+        padding: 5px 15px 5px 5px;
+        font-size: 14px;
+        font-style: italic;
+        color: @background-color;
+        opacity:.4;
+        transition: all .2s ease-out;
+        &:hover {
+          opacity: 1;
+          font-size: 15px;
+          background: rgba(0, 0, 0, .6);
+        }
+        //hide figure captions on smaller touchscreen devices
+        @media (max-width: @screen-sm-max) {
+          display: none;
+        }
+      }
+      .text-box {
+        background: rgb(0, 0, 0); /* Fall-back for browsers that don't support rgba */
+        background: rgba(0, 0, 0, .8);
+        color: @background-color;
+        padding: 25px 25px;
+        border-radius: 25px;
+        font-size: 25px;
+        font-weight: 100;
+        @media (max-width: @screen-xs-max) {
+          font-size: 16px;
+          font-weight: 300;
+        }
+        a{
+          color: @link-light-color;
+        }
+        h3{
+          font-size: 35px;
+          font-weight: 300;
+          margin-bottom: 20px;
+          @media (max-width: @screen-xs-max) {
+            font-size: 25px;
+          }
+          span {
+            font-style: italic;
+            font-weight: 100;
+            float:right;
+          }
+        }
+      }
+    }
+  }
+}

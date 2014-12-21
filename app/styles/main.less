@@ -2,8 +2,12 @@
 
 //@icon-font-path: "../fonts/glyphicons/";
 
+//colors
 @dark-font-color: #696969;
 @link-color: #3989C9;
+@link-light-color: #9CC4E4;
+@background-color: #fff;
+//high level dimensions
 @aside-width: 150px;
 @header-height: 40px;
 //z-index tracker
@@ -37,7 +41,6 @@ aside {
   height: 100%;
   width: @aside-width;
   line-height: 50px;
-  box-shadow: inset -1px 0px 27px -4px rgba(0, 0, 0, .1) ;
   //links
   ul {
     list-style-type: none;
@@ -50,10 +53,10 @@ aside {
 *******main/header styles*******
 ********************************/
 main, header {
-  background-color: white;
+  background-color: @background-color;
   width: 100%;
   left: 0px;
-  transition: all .2s ease-out;
+  transition: all .2s ease-in;
   //when hamburger is pressed
   &.show-aside {
     left: @aside-width;
@@ -63,13 +66,15 @@ main {
   height: 100%;
   position: absolute;
   z-index: @index-main;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
 }
 
 header {
-  background-color: yellow;
+  background-color: @background-color;
   position: fixed;
   height: @header-height;
   z-index: @index-header;
+  transition: all .2s ease-out;
   a {
     padding: 12px 30px;
     //hamburger icon markup
@@ -79,7 +84,7 @@ header {
       left: 20px;
       top: @header-height/3;
       width: 20px;
-      height: 2px;
+      height: 3px;
       background: @dark-font-color;
       box-shadow:
       0 @header-height/6 0 0 @dark-font-color,
@@ -90,6 +95,14 @@ header {
     line-height: @header-height;
     font-size: @header-height/2;
     font-family: 'Lobster Two', sans-serif;
+    opacity: 0;
+    transition: all .2s ease-out;
+  }
+  &.scrolling {
+    box-shadow: -1px 0px 27px -4px rgba(0, 0, 0, .3) ;
+    span {
+      opacity: 1;
+    }
   }
 }
 
@@ -115,69 +128,5 @@ header {
   }
 }
 
-.category-headers {
-  margin-top: 50px;
-  //paint all the respective category headers their color
-  .col-xs-4 {
-    &:nth-of-type(1) > div {
-      background-color: #a967aa;
-    }
-    &:nth-of-type(2) > div {
-      background-color: #6dc065;
-    }
-    &:nth-of-type(3) > div {
-      background-color: #3989c9;
-    }
-  }
-  .category-header {
-    //creates a circle for the background
-    border-radius: 50%;
-    position: relative;
-    //prevent from expanding too large with screen size
-    max-width: 135px;
-    //keep div centered if it hits max width
-    margin: 0 auto;
-    //ensure the div stays at a 1:1 ratio, regardless of width
-    &:before {
-      content: "";
-      display: block;
-      padding-top: 100%;
-    }
-    //initial image shown
-    .icon-img, .icon-text {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      transition: all .2s ease-out;
-    }
-    .icon-img {
-      top: 0;
-      opacity: 1;
-    }
-    .icon-text {
-      opacity: 0;
-      top: 150px;
-    }
-    &:hover {
-      .icon-img {
-        top: -150px;
-        opacity: 0;
-      }
-      .icon-text {
-        top: 0px;
-        opacity: 1;
-      }
-    }
-  }
-}
+@import 'categories.less';
 
-@import 'sections.less';
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  .fixedimg {
-    .itemtext {
-      font-weight: 100;
-    }
-  }
-}

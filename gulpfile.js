@@ -3,6 +3,8 @@
 // generated on 2014-12-20 using generator-gulp-webapp 0.2.0
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
+//stories to add to the website
+var stories = require('./stories/stories');
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.less')
@@ -19,26 +21,38 @@ gulp.task('jshint', function () {
     .pipe($.jshint.reporter('fail'));
 });
 
-  gulp.task('templates', function () {
-    return gulp.src('app/templates/**/*.hbs')
-      .pipe($.handlebars())
-      .pipe($.defineModule('plain'))
-      .pipe($.declare({
-        namespace: 'category.templates' // change this to whatever you want
-      }))
-      .pipe(gulp.dest('.tmp/templates'));
-  });
+gulp.task('compile-hbs', function () {
+  var options = {
+    ignorePartials: true,
+    batch: ['./app/templates/partials'],
+    helpers: {
+      capitals: function (str) {
+        return str.toUpperCase();
+      }
+    }
+  };
+  return gulp.src('app/templates/**/*.hbs')
+    .pipe($.compileHandlebars(stories, options))
+    .pipe(gulp.dest('.tmp/templates'));
+});
 
-gulp.task('html', ['styles', 'templates'], function () {
+gulp.task('inject-hbs',['compile-hbs'], function () {
+  return gulp.src('app/index.html')
+    .pipe($.fileInclude({
+      prefix: '@@',
+      basepath: '@root'
+    }))
+    .pipe(gulp.dest('.tmp'));
+});
+gulp.task('html', ['styles', 'inject-hbs'], function () {
   var assets = $.useref.assets({searchPath: '{.tmp,app}'});
-
   return gulp.src('app/*.html')
     .pipe(assets)
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.csso()))
     .pipe(assets.restore())
     .pipe($.useref())
-    .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
+//    .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
     .pipe(gulp.dest('dist'));
 });
 
@@ -70,7 +84,7 @@ gulp.task('extras', function () {
 
 gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 
-gulp.task('connect', ['styles', 'templates'], function () {
+gulp.task('connect', ['styles', 'compile-hbs'], function () {
   var serveStatic = require('serve-static');
   var serveIndex = require('serve-index');
   var app = require('connect')()
@@ -80,7 +94,7 @@ gulp.task('connect', ['styles', 'templates'], function () {
     // paths to bower_components should be relative to the current file
     // e.g. in app/index.html you should use ../bower_components
     .use('/bower_components', serveStatic('bower_components'))
-    .use(serveIndex('app'));
+    .use(serveIndex('.tmp'));
 
   require('http').createServer(app)
     .listen(9000)
@@ -91,19 +105,6 @@ gulp.task('connect', ['styles', 'templates'], function () {
 
 gulp.task('serve', ['connect', 'watch'], function () {
   require('opn')('http://localhost:9000');
-});
-
-// inject bower components
-gulp.task('wiredep', function () {
-  var wiredep = require('wiredep').stream;
-
-  gulp.src('app/styles/*.less')
-    .pipe(wiredep())
-    .pipe(gulp.dest('app/styles'));
-
-  gulp.src('app/*.html')
-    .pipe(wiredep())
-    .pipe(gulp.dest('app'));
 });
 
 gulp.task('watch', ['connect'], function () {
@@ -119,8 +120,7 @@ gulp.task('watch', ['connect'], function () {
   ]).on('change', $.livereload.changed);
 
   gulp.watch('app/styles/**/*.less', ['styles']);
-  gulp.watch('app/templates/**/*.hbs', ['templates']);
-  gulp.watch('bower.json', ['wiredep']);
+  gulp.watch('app/templates/**/*.hbs', ['inject-hbs']);
 });
 
 gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {

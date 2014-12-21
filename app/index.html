@@ -27,7 +27,7 @@
 </head>
 <body>
 <!-- to associate this site with my Google+ Account on search results-->
-<a href="https://plus.google.com/107934867984232167311?rel=author" style="display:none;">Travis Bloom</a>
+<a href="https://plus.google.com/+TravisBloom223" style="display: none;">Travis Bloom</a>
 <!--[if lt IE 9]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
@@ -93,6 +93,7 @@
     </div>
     <div class="panel-group row" id="categories-container">
         <!--stories are injected in here using handlebars-->
+        @@include('.tmp/templates/story.hbs')
     </div>
 </main>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -117,8 +118,6 @@
 <!-- endbuild -->
 
 <!-- build:js scripts/main.js -->
-<script src="templates/story.js"></script>
-<script src="scripts/stories.js"></script>
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
 </body>

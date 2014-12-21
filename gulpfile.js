@@ -36,7 +36,7 @@ gulp.task('compile-hbs', function () {
     .pipe(gulp.dest('.tmp/templates'));
 });
 
-gulp.task('inject-hbs',['compile-hbs'], function () {
+gulp.task('inject-hbs', ['compile-hbs'], function () {
   return gulp.src('app/index.html')
     .pipe($.fileInclude({
       prefix: '@@',
@@ -84,7 +84,7 @@ gulp.task('extras', function () {
 
 gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 
-gulp.task('connect', ['styles', 'compile-hbs'], function () {
+gulp.task('connect', ['styles', 'inject-hbs'], function () {
   var serveStatic = require('serve-static');
   var serveIndex = require('serve-index');
   var app = require('connect')()

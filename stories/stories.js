@@ -4,6 +4,7 @@ module.exports = [
     {
       'title': 'ITLP',
       'date': '2013 - Current',
+      'imgSrc': 'ge_amstc.jpg',
       'imgDesc' : 'My team\'s final pitchout for the case study. We earned <a href="http://instagram.com/p/chefBfHLLW/">top honors</a> for our solution.',
       'text': 'I began working for GE\'s <a href="http://www.ge.com/careers/culture/recruiting-development/information-technology-leadership-program/united-states"> Information Technology Leadership Program</a> in June 2013. The program lets recent graduates work four jobs over two years in a variety of IT roles. The first four weeks were spent participating in a case study with over 100 other ITLPs where we developed a Business Intelligence reporting solution for one of GE\'s businesses.'
     },

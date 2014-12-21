@@ -2,23 +2,23 @@
     <section class="panel">
         <div id="section{{@index}}" data-parent="#categories-container" class="collapse">
           {{#each this}}
-              <article class="fixed-img">
-                  <!--description of the image being used-->
-                {{#if imgDesc}}
-                    <figcaption>
-                      {{{imgDesc}}}
-                    </figcaption>
-                {{/if}}
-                  <div class="row">
-                      <div class="text-box col-md-8 col-md-offset-2">
-                          <!-----adds title present---->
-                        {{#if title}}
-                            <h3>
-                              {{title}} {{#if date}}<span>{{date}}</span>{{/if}}
-                            </h3>
-                        {{/if}}
-                          <p>{{{text}}}</p>
-                      </div>
+              <article class="row">
+                  <figure class="col-sm-2 col-sm-offset-3">
+                      <img src="../images/stories/ge_amstc.jpg" />
+                    {{#if title}}
+                        <h3>
+                          {{title}} {{#if date}}<span>{{date}}</span>{{/if}}
+                        </h3>
+                    {{/if}}
+                      <!--description of the image being used-->
+                    {{#if imgDesc}}
+                        <figcaption>
+                          {{{imgDesc}}}
+                        </figcaption>
+                    {{/if}}
+                  </figure>
+                  <div class="text-box col-sm-3 col-sm-offset-2">
+                      <p>{{{text}}}</p>
                   </div>
               </article>
           {{/each}}

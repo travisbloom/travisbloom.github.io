@@ -14,8 +14,7 @@ $(function() {
   FastClick.attach(document.body);
   //toggles the animation class for the sidebar
   $("#aside-toggle").click(function() {
-    $("header").toggleClass("show-aside");
-    $("main").toggleClass("show-aside");
+    $("header, main").toggleClass("show-aside");
   });
 //  //Header Scroll Effect
 //  $('.category-headers').waypoint(function(direction) {
@@ -28,12 +27,5 @@ $(function() {
 //      $("#header-holder").removeClass().addClass("headerScroll");
 //    }
 //  });
-
-
-  Handlebars.registerHelper('setParentIndex', function(value) {
-    this.index = Number(value); //I needed human readable index, not zero based
-  });
-  //inject each panel group with the template
-  $('.panel-group').append(category.templates.story(storyData));
 });
 

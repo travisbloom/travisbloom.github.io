@@ -13,6 +13,7 @@
     "gulp": "^3.8.10",
     "gulp-autoprefixer": "^1.0.1",
     "gulp-cache": "^0.2.2",
+    "gulp-clean": "^0.3.1",
     "gulp-compile-handlebars": "^0.4.4",
     "gulp-csso": "^0.2.6",
     "gulp-file-include": "^0.7.1",

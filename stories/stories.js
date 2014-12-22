@@ -2,30 +2,31 @@ module.exports = [
   //Section 0
   [
     {
-      'title': 'ITLP',
-      'date': '2013 - Current',
+      'title': 'Next Gen Ops Architect',
+      'date': 'Sept. 2014',
       'imgSrc': 'ge_itlp100_pitch.jpg',
-      'imgDesc' : 'My team\'s final pitchout for the case study. We earned <a href="http://instagram.com/p/chefBfHLLW/">top honors</a> for our solution.',
-      'text': 'I began working for GE\'s <a href="http://www.ge.com/careers/culture/recruiting-development/information-technology-leadership-program/united-states"> Information Technology Leadership Program</a> in June 2013. The program lets recent graduates work four jobs over two years in a variety of IT roles. The first four weeks were spent participating in a case study with over 100 other ITLPs where we developed a Business Intelligence reporting solution for one of GE\'s businesses.'
+      'imgDesc' : 'My team\'s final pitchout during ITLP initial training. We earned <a href="http://instagram.com/p/chefBfHLLW/">top honors</a> for our solution.',
+      'text': 'I joined GE\'s <a href="http://www.ge.com/careers/culture/recruiting-development/information-technology-leadership-program/united-states"> Information Technology Leadership Program</a> in June 2013. The job gives recent graduates the chance to work in four completely different IT roles over the course of two years, with graduate coursework built in throughout. </br>Currently I work as a Cloud Architect, developing APIs to enable GE’s Next Generation Operations initiatives.'
     },
     {
-      'title': 'Front-End Web Developer',
+      'title': 'Front-End Engineer',
       'imgSrc': 'node_road.jpg',
-      'text': 'This rotation I\'m working as a software engineer, building out a new home page for GE\'s 300,000+ employees. Our team develops using the <a href="http://code.tutsplus.com/tutorials/introduction-to-the-mean-stack--cms-19918">MEAN</a> stack, with a focus on test driven development. My various projects include building out unit tests and additional modules for one of the largest implementations of Angular.js in the world.'
+      'date': 'Mar. 2014',
+      'text': 'Last rotation I worked as a front end engineer, helping to launch a new home page for GE\'s 300,000+ employees. My main deliverables involved building modules and unit tests for one of the largest implementations of Angular.js in the world. I also got the chance to work across our tech stack <a href=” http://en.wikipedia.org/wiki/MEAN”>(MEAN)</a>, refactoring the existing API server and building out new routes/3rd party integrations.'
     },
     {
-      'title': 'ServiceNow COE Project Manager',
+      'title': 'ServiceNow Project Manager',
       'imgSrc': 'ge_amstc.jpg',
-      'imgDesc' : 'The Advanced Manufacturing and Software Technology Center in Van Buren Township, Michigan, where training was held.',
-      'text': 'My first rotation was spent in Shelton, CT working within GE\'s <a href="http://www.servicenow.com/">ServiceNow</a> Center of Excellence. As a member of the team responsible for the largest ServiceNow instance in the world, I worked with functional owners and my technical team to manage our notification stream. </p>' +
-        '<p>My other projects included helping GE Healthcare gather initial requirements for their to-be Change Process within ServiceNow and managing the development of a new marketing portal for my organization.'
+      'date': 'Aug. 2013',
+      'imgDesc' : 'The Advanced Manufacturing and Software Technology Center in Van Buren Township, Michigan, where ITLP initial training was held.',
+      'text': 'My first rotation was spent working within GE\'s <a href="http://www.servicenow.com/">ServiceNow</a> Center of Excellence managing part of the largest ServiceNow instance in the world. I owned technical implementation of our notification stream, working with a development team of four to push 70+ platform features to production. </br>' +
+        'My other projects included helping GE Healthcare build out new ITIL processes within ServiceNow and managing the development of a new marketing portal for my organization.'
     },
     {
       'title': 'ITLP Intern',
       'date': 'Summer 2012',
       'imgSrc': 'ge_internship_offer.jpg',
-      'text': 'Prior to my fulltime offer I interned for the program in Trevose, PA. I spent the summer working within <a href="http://www.itlpblog.com/2012/07/30/collaboration-in-a-global-company/">GE\'s Global Infrastructure Services on IP phone systems.</a> My main project involved managing the integration of a solution that enabled self-service password reset functionality for our customers.</p>' +
-        '<p>In addition, I also designed a new interface for my team\'s internal portal and developed a front-end for a referential web service.'
+      'text': 'Prior to my fulltime offer I interned within <a href="http://www.itlpblog.com/2012/07/30/collaboration-in-a-global-company/">GE\'s Global Infrastructure Services on our IP phone systems.</a> My summer was spent managing the integration of a 3rd party solution that enables self-service password reset functionality. I also had the opportunity to redesign my team\'s internal portal.'
     }
   ],
   //Section 1
@@ -37,34 +38,32 @@ module.exports = [
     {
       'imgSrc': 'uconn_hall_of_fame.jpg',
       'imgDesc': 'The award given to me during my induction.',
-      'text': 'In addition to graduating as an Honors Scholar, I was <a href="http://www.business.uconn.edu/cms/p242/a706">one of the two undergraduates added to the UConn Business School Hall of Fame during 2013</a>. In my final month of school I was inducted as a Student Fellow for my academics, <a href="http://myeasyclass.com/">thesis work</a>, and extracurricular involvement.'
+      'text': 'In addition to graduating as an Honors Scholar, I was <a href="http://www.business.uconn.edu/cms/p242/a706">one of the three undergraduates added to the UConn Business School Hall of Fame during 2013</a>. In my final month of school I was inducted as a Student Fellow for my academics, <a href="http://myeasyclass.com/">thesis work</a>, and extracurricular involvement.'
     },
     {
       'imgSrc': 'uconn_aepi.jpg',
       'imgDesc': 'Pledge books given out to potential new members of my fraternity, Alpha Epsilon Pi.',
-      'text': 'Outside of the classroom I was a vocal leader within Greek life at UConn. Originally elected Secretary of my fraternity sophomore year, I became President during fall of 2011. My year long term was spent managing a 9 man executive board, leading an 89 brother chapter with an operating budget of $75,000, and working with other Greek organizations to push our community in a positive direction.'
+      'text': 'Outside of the classroom I was a vocal leader within Greek life at UConn. Originally elected as Secretary of my fraternity sophomore year, I became President during fall of 2011. My year long term was spent managing a 9 man executive board, leading an 89 brother chapter with an operating budget of $75,000, and working with other Greek organizations to push our community in a positive direction.'
     }
   ],
   //Section 2
   [
     {
       'imgSrc': 'myeasyclass.jpg',
-      'title': 'MyEasyClass.com',
-      'text': 'For my honors thesis at UConn I developed and launched my own web app. Semester after semester, when course registration opened up, my newsfeed got spammed with friends asking the same question, "What are some easy Gen Eds to fill my schedule for next semester?" Offerings like RateMyProfessors.com were great if you already knew what class you wanted to look at, but there was no easy way for my peers to see top ranked courses at UConn: MyEasyClass was built to fill this need.</p>' +
-        '<p>The site, my first attempt at building a dynamic web app, was originally created using JQuery, Bootstrap, and <a href="https://parse.com/">Parse</a>. Most recently I updated it to showcase my experience with Angular.js. It launched right before courses registration opened during Spring 2013 and got more than 2,700 pageviews/1,200 unique visitors over the course of the first month. During class registration the following fall, MyEasyClass had 5,200+ pageviews and 3,200 unique visitors. </p>' +
-        '<p>Putting this in to perspective, more than 20% of UConn\'s undergraduate population used the site in the fall of 2013.'
+      'title': '<a href=”http://myeasylcass.com>MyEasyClass.com</a>',
+      'text': 'For my honors thesis at UConn I developed and launched my first <a href=” http://en.wikipedia.org/wiki/Single-page_application”> single page web application</a>. The application was built to fill a need that I saw semester after semester: there was no easy way to browse top ranked courses at my school. Offerings like RateMyProfessors.com were great if you already had a class in mind, but MyEasyClass’ reddit-style layout made it easy to quickly discover other course options.</br>' +
+        '</br>The site was originally created using JQuery, Bootstrap, and <a href="https://parse.com/">Parse</a> (JQuery was eventually replaced with Angular.js).</br> It launched spring of 2013, garnering 1,200+ unique visitors within the first month. During class registration the following fall, MyEasyClass had 5,200+ pageviews and 3,200 unique visitors. Putting this in to perspective, more than 20% of UConn\'s undergraduate population used the site.'
     },
     {
       'imgSrc': 'bloomtrends.jpg',
       'title': 'BloomTrends',
-      'text': 'I\'ve been an avid reader of technology news (<a href="http://www.theverge.com/">The Verge</a>, <a href="http://techmeme. com/">Techmeme</a>, and <a href="https://news.ycombinator.com/">Hacker News</a> are just a few of my favorites) since 2009 and occasionally comment on the industry on my blog, <a href="http://blog.travisbloom.me/">BloomTrends</a>. The site\'s content includes interesting quotes from opinion pieces, video reviews of new products, and even some <a href="http://blog.travisbloom.me/tagged/Original_Posts">original content</a> I\'ve written. </p><p>Although my readership is small, some of my pieces have been featured on the <a href="http://blog.travisbloom.me/post/41131590321">front page</a> of Hacker News.'
+      'text': 'I\'ve been an avid reader of technology news (<a href="http://www.theverge.com/">The Verge</a>, <a href="http://techmeme. com/">Techmeme</a>, and <a href="https://news.ycombinator.com/">Hacker News</a> are just a few of my favorites) since 2009 and occasionally comment on the industry through my blog <a href="http://blog.travisbloom.me/">BloomTrends</a>. The site\'s content includes interesting quotes from opinion pieces, video reviews of new products, and even some <a href="http://blog.travisbloom.me/tagged/Original_Posts">original content</a> I\'ve written. </br>Although my readership is small, some of my pieces have been featured on the <a href="http://blog.travisbloom.me/post/41131590321">front page</a> of Hacker News.'
     },
     {
       'title': 'travisbloom.me',
       'imgSrc': 'code.jpg',
-      'text': 'My interest in web design/development started during my Sophomore year of college. I used online tools like <a href="http://teamtreehouse.com/home">Team Treehouse</a> and <a hreg="http://www.codecademy.com/">Codeacademy</a> to teach myself the basics of HTML, CSS, and Javascript. You can see my earliest attempt at building a site <a href="Old/travisbloom.me_Dec_2011/index.html">here</a> (circa 2011) and a more recent version from earlier this year <a href="Old\\travisbloom.me _Sept_2013\\index.html">here</a>.</p> ' +
-        '<p> This most recent responsive version of travisbloom.me was built using Bootstrap 3, JQuery, and Waypoints.js. Handlebars.js is used to easily update stories and add new content to the respective sections. The fonts used, Lato and Lobster 2, can be found on <a href="http://www.google.com/fonts">Google Fonts</a>. All images/graphics used on the site were taken and created by me.'
+      'text': 'My interest in web design/development started during my sophomore year of college. I used online tools like <a href="http://teamtreehouse.com/home">Team Treehouse</a> and <a hreg="http://www.codecademy.com/">Codeacademy</a> to teach myself the basics of HTML, CSS, and Javascript. </br> ' +
+        'This most recent version of travisbloom.me was built as a static, single page blog, with all the section content typed up in a single JSON file. When a new version of the site is deployed, Gulp.js compiles the stories data to a Handlebars.js template and inject the outputted html in to my index file. This setup allows me to easily update stories and add new content to respective sections. '
     }
   ]
-
 ];

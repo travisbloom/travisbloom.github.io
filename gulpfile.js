@@ -115,11 +115,12 @@ gulp.task('watch', ['connect'], function () {
     'app/*.html',
     '.tmp/styles/**/*.css',
     'app/scripts/**/*.js',
-    '.tmp/templates/**/*.js',
+    '.tmp/index.html',
     'app/images/**/*'
   ]).on('change', $.livereload.changed);
 
   gulp.watch('app/styles/**/*.less', ['styles']);
+  gulp.watch('stories/**/*.js', ['inject-hbs']);
   gulp.watch('app/templates/**/*.hbs', ['inject-hbs']);
 });
 

@@ -1,4 +1,5 @@
 $(function() {
+  'use strict';
   //attaches the fastClick plugin to the body, improving mobile responsiveness
   FastClick.attach(document.body);
   //set the header text to the navIcon's section
@@ -16,7 +17,7 @@ $(function() {
   });
  //show header items on scroll
   $('#categories-container').waypoint({
-    handler: function(direction) {
+    handler: function() {
       $('header').toggleClass('scrolling');
     }
   });
@@ -26,12 +27,14 @@ $(function() {
     $('header, main').toggleClass('show-aside');
   });
   //add the sidebar event to swipes
-  $(document.body).on("swipeleft", function() {
-    if ($('main').hasClass('show-aside'))
+  $(document.body).on('swipeleft', function() {
+    if ($('main').hasClass('show-aside')) {
       $('header, main').removeClass('show-aside');
+    }
   });
-  $(document.body).on("swiperight", function() {
-    if (!$('main').hasClass('show-aside'))
+  $(document.body).on('swiperight', function() {
+    if (!$('main').hasClass('show-aside')) {
       $('header, main').addClass('show-aside');
+    }
   });
 });

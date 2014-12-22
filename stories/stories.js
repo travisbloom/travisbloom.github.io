@@ -32,23 +32,6 @@ module.exports = [
   //Section 1
   [
     {
-      'imgSrc': 'uconn_husky.jpg',
-      'text': 'I graduated from UConn in May of 2013 with a Degree in Management Information Systems and a cumulative GPA of 3.96. Courses like Accounting, Finance, and Management gave me a solid foundation in business while others like Software Development, Database Design, Data Mining, and Web Development allowed me to explore my passion for technology.'
-    },
-    {
-      'imgSrc': 'uconn_hall_of_fame.jpg',
-      'imgDesc': 'The award given to me during my induction.',
-      'text': 'In addition to graduating as an Honors Scholar, I was <a href="http://www.business.uconn.edu/cms/p242/a706">one of the three undergraduates added to the UConn Business School Hall of Fame during 2013</a>. In my final month of school I was inducted as a Student Fellow for my academics, <a href="http://myeasyclass.com/">thesis work</a>, and extracurricular involvement.'
-    },
-    {
-      'imgSrc': 'uconn_aepi.jpg',
-      'imgDesc': 'Pledge books given out to potential new members of my fraternity, Alpha Epsilon Pi.',
-      'text': 'Outside of the classroom I was a vocal leader within Greek life at UConn. Originally elected as Secretary of my fraternity sophomore year, I became President during fall of 2011. My year long term was spent managing a 9 man executive board, leading an 89 brother chapter with an operating budget of $75,000, and working with other Greek organizations to push our community in a positive direction.'
-    }
-  ],
-  //Section 2
-  [
-    {
       'imgSrc': 'myeasyclass.jpg',
       'title': '<a href=”http://myeasylcass.com>MyEasyClass.com</a>',
       'text': 'For my honors thesis at UConn I developed and launched my first <a href=” http://en.wikipedia.org/wiki/Single-page_application”> single page web application</a>. The application was built to fill a need that I saw semester after semester: there was no easy way to browse top ranked courses at my school. Offerings like RateMyProfessors.com were great if you already had a class in mind, but MyEasyClass’ reddit-style layout made it easy to quickly discover other course options.</br>' +
@@ -64,6 +47,22 @@ module.exports = [
       'imgSrc': 'code.jpg',
       'text': 'My interest in web design/development started during my sophomore year of college. I used online tools like <a href="http://teamtreehouse.com/home">Team Treehouse</a> and <a hreg="http://www.codecademy.com/">Codeacademy</a> to teach myself the basics of HTML, CSS, and Javascript. </br> ' +
         'This most recent version of travisbloom.me was built as a static, single page blog, with all the section content typed up in a single JSON file. When a new version of the site is deployed, Gulp.js compiles the stories data to a Handlebars.js template and inject the outputted html in to my index file. This setup allows me to easily update stories and add new content to respective sections. '
+    }
+  ],
+  [
+    {
+      'imgSrc': 'uconn_husky.jpg',
+      'text': 'I graduated from UConn in May of 2013 with a Degree in Management Information Systems and a cumulative GPA of 3.96. Courses like Accounting, Finance, and Management gave me a solid foundation in business while others like Software Development, Database Design, Data Mining, and Web Development allowed me to explore my passion for technology.'
+    },
+    {
+      'imgSrc': 'uconn_hall_of_fame.jpg',
+      'imgDesc': 'The award given to me during my induction.',
+      'text': 'In addition to graduating as an Honors Scholar, I was <a href="http://www.business.uconn.edu/cms/p242/a706">one of the three undergraduates added to the UConn Business School Hall of Fame during 2013</a>. In my final month of school I was inducted as a Student Fellow for my academics, <a href="http://myeasyclass.com/">thesis work</a>, and extracurricular involvement.'
+    },
+    {
+      'imgSrc': 'uconn_aepi.jpg',
+      'imgDesc': 'Pledge books given out to potential new members of my fraternity, Alpha Epsilon Pi.',
+      'text': 'Outside of the classroom I was a vocal leader within Greek life at UConn. Originally elected as Secretary of my fraternity sophomore year, I became President during fall of 2011. My year long term was spent managing a 9 man executive board, leading an 89 brother chapter with an operating budget of $75,000, and working with other Greek organizations to push our community in a positive direction.'
     }
   ]
 ];

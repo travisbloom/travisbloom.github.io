@@ -1,7 +1,7 @@
 <!doctype html>
 <!--**********************************************************************
 **************************************************************************
-*******Feel free to check me out on twitter at @TravisBloom***************
+*******Feel free to check me out on twitter: @TravisBloom*****************
 **************************************************************************
 ***********************************************************************-->
 <html class="no-js" lang="">
@@ -9,14 +9,29 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <meta property="image" content="apple-touch-icon.png" />
     <title>Travis Bloom</title>
-    <link rel="icon" type="image/png" href="favicon.ico">
     <meta name="description" content="The personal website of Travis Bloom, an IT professional, full stack engineer, and tech enthusiast working at General Electric.">
     <meta name="author" content="Travis Bloom">
+    <!--favicon images-->
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300|Lobster+Two' rel='stylesheet' type='text/css'>
-
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png">
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#3989c9">
+    <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -77,19 +92,18 @@
             </div>
         </div>
         <div class="col-xs-4 col-md-2">
-            <div class="category-header" data-target="#section1" data-toggle="collapse" name="education">
-                <img class="icon-img" src="images/graduation.png">
-                <img class="icon-text" src="images/educationtext.png" alt="Education">
-            </div>
-        </div>
-        <div class="col-xs-4 col-md-2">
-            <div class="category-header" data-target="#section2" data-toggle="collapse" name="projects">
+            <div class="category-header" data-target="#section1" data-toggle="collapse" name="projects">
                 <img class="icon-img" src="images/projects.png">
                 <img class="icon-text" src="images/projectstext.png" alt="Projects">
             </div>
         </div>
+        <div class="col-xs-4 col-md-2">
+            <div class="category-header" data-target="#section2" data-toggle="collapse" name="projects">
+                <img class="icon-img" src="images/graduation.png">
+                <img class="icon-text" src="images/educationtext.png" alt="Education">
+            </div>
+        </div>
     </section>
-    </div>
     <div id="categories-container" class="row">
         <!--stories are injected in here using handlebars templates-->
         @@include('.tmp/templates/story.hbs')

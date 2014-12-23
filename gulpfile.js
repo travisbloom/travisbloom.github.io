@@ -128,7 +128,11 @@ gulp.task('build', ['html', 'images', 'extras'], function () {
 
 gulp.task('deploy', ['build'], function () {
   return gulp.src('dist')
-    .pipe($.subtree())
+    .pipe($.subtree({
+      remote: 'origin',
+      branch: 'gh-pages',
+      message: 'Here We Go!'
+    }))
     .pipe($.clean());
 });
 

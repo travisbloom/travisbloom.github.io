@@ -128,8 +128,7 @@ gulp.task('build', ['html', 'images', 'extras'], function () {
 
 gulp.task('deploy', ['build'], function () {
   return gulp.src('dist')
-    .pipe($.ghPages())
-    .pipe($.clean());
+    .pipe($.ghPages());
 });
 
 gulp.task('default', ['clean'], function () {

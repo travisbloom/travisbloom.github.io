@@ -12,7 +12,7 @@ module.exports = [
       'title': 'Front-End Engineer',
       'imgSrc': 'node_road.jpg',
       'date': 'Mar. 2014',
-      'text': 'Last rotation I worked as a front end engineer, helping to launch a new home page for GE\'s 300,000+ employees. My main deliverables involved building modules and unit tests for one of the largest implementations of Angular.js in the world. I also got the chance to work across our tech stack <a href=” http://en.wikipedia.org/wiki/MEAN”>(MEAN)</a>, refactoring the existing API server and building out new routes/3rd party integrations.'
+      'text': 'Last rotation I worked as a front end engineer, helping to launch a new home page for GE\'s 300,000+ employees. My main deliverables involved building modules and unit tests for one of the largest implementations of Angular.js in the world. I also got the chance to work across our tech stack <a href=" http://en.wikipedia.org/wiki/MEAN">(MEAN)</a>, refactoring the existing API server and building out new routes/3rd party integrations.'
     },
     {
       'title': 'ServiceNow Project Manager',
@@ -33,8 +33,8 @@ module.exports = [
   [
     {
       'imgSrc': 'myeasyclass.jpg',
-      'title': '<a href=”http://myeasylcass.com>MyEasyClass.com</a>',
-      'text': 'For my honors thesis at UConn I developed and launched my first <a href=” http://en.wikipedia.org/wiki/Single-page_application”> single page web application</a>. The application was built to fill a need that I saw semester after semester: there was no easy way to browse top ranked courses at my school. Offerings like RateMyProfessors.com were great if you already had a class in mind, but MyEasyClass’ reddit-style layout made it easy to quickly discover other course options.</br>' +
+      'title': '<a href="http://myeasyclass.com">MyEasyClass.com</a>',
+      'text': 'For my honors thesis at UConn I developed and launched my first <a href="http://en.wikipedia.org/wiki/Single-page_application"> single page web application</a>. The application was built to fill a need that I saw semester after semester: there was no easy way to browse top ranked courses at my school. Offerings like RateMyProfessors.com were great if you already had a class in mind, but MyEasyClass’ reddit-style layout made it easy to quickly discover other course options.</br>' +
         '</br>The site was originally created using JQuery, Bootstrap, and <a href="https://parse.com/">Parse</a> (JQuery was eventually replaced with Angular.js).</br> It launched spring of 2013, garnering 1,200+ unique visitors within the first month. During class registration the following fall, MyEasyClass had 5,200+ pageviews and 3,200 unique visitors. Putting this in to perspective, more than 20% of UConn\'s undergraduate population used the site.'
     },
     {

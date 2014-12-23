@@ -64,7 +64,6 @@ gulp.task('watch', ['connect'], function () {
 
   // watch for changes
   gulp.watch([
-    'app/*.html',
     '.tmp/styles/**/*.css',
     'app/scripts/**/*.js',
     '.tmp/index.html',
@@ -73,6 +72,7 @@ gulp.task('watch', ['connect'], function () {
 
   gulp.watch('app/styles/**/*.less', ['styles']);
   gulp.watch('stories/**/*.js', ['inject-hbs']);
+  gulp.watch('app/*.html', ['inject-hbs']);
   gulp.watch('app/templates/**/*.hbs', ['inject-hbs']);
 });
 /***
@@ -119,8 +119,13 @@ gulp.task('extras', function () {
   ]).pipe(gulp.dest('dist'));
 });
 
-gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
-
+gulp.task('clean', function (cb) {
+  require('del')([
+    '.tmp/**',
+    'dist/**/*',
+    '!dist/.git'
+  ], cb);
+});
 
 gulp.task('build', ['html', 'images', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));

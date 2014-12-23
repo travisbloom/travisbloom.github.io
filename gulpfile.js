@@ -126,11 +126,6 @@ gulp.task('build', ['html', 'images', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
-gulp.task('deploy', ['build'], function () {
-  return gulp.src('dist')
-    .pipe($.ghPages());
-});
-
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
 });

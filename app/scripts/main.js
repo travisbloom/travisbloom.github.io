@@ -38,7 +38,4 @@ $(function() {
       $('header, main').addClass('show-aside');
     }
   });
-  //prevent bounce effect on iOS
-  $(document).on("touchmove", function(evt) { evt.preventDefault() });
-  $(document).on("touchmove", ".scrollable", function(evt) { evt.stopPropagation() });
-});
+ });

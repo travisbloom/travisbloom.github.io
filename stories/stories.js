@@ -6,7 +6,7 @@ module.exports = [
       'date': 'March 2015',
       'imgSrc': 'ge_san_ramon.jpg',
       'imgDesc' : 'View from GE\'s Software Center of Excellence in San Ramon, California.',
-      'text': 'I joined GE\'s <a href="http://www.ge.com/careers/culture/recruiting-development/information-technology-leadership-program/united-states"> Information Technology Leadership Program</a> in June 2013. The job gives recent graduates the chance to work in four completely different IT roles over the course of two years, with graduate coursework built in throughout. </br>Currently I work as a Mobile Engineer on the High Impact Innovation Team, developing native and hybrid applications for GE\'s various buisness units.'
+      'text': 'I joined GE\'s <a href="http://www.ge.com/careers/culture/recruiting-development/information-technology-leadership-program/united-states"> Information Technology Leadership Program</a> in June 2013. The job gives recent graduates the chance to work in four completely different IT roles over the course of two years, with graduate coursework built in throughout. </br>Currently I work as a Mobile Engineer on the High Impact Innovation Team, developing native and hybrid applications for GE\'s various business units.'
     },
     {
       'title': 'Next Gen Ops API Architect',

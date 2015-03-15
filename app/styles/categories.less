@@ -75,6 +75,8 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
+      //in case images don't load, prevent background items from being shown
+      background-color: @background-color;
       position: relative;
       @media (max-width: @screen-xs-max) {
         padding: 100px  0;
@@ -92,7 +94,7 @@
         transition: all .2s ease-out;
         &:hover {
           opacity: 1;
-          font-size: 15px;
+          font-size: 14px;
           background: rgba(0, 0, 0, .6);
         }
         //hide figure captions on smaller touchscreen devices
@@ -111,7 +113,7 @@
         //ensures div will take up space
         //todo figure out why this is needed
         float: none;
-        @media (max-width: @screen-xs-max) {
+        @media (max-width: @screen-md-max) {
           font-size: 16px;
           font-weight: 300;
         }
@@ -129,7 +131,7 @@
             font-style: italic;
             font-weight: 100;
             float:right;
-            @media (max-width: @screen-xs-max) {
+            @media (max-width: @screen-md-max) {
               display: none;
             }
           }

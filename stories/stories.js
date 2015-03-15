@@ -2,17 +2,24 @@ module.exports = [
   //Section 0
   [
     {
-      'title': 'Next Gen Ops Architect',
+      'title': 'Mobile Engineer',
+      'date': 'March 2015',
+      'imgSrc': 'ge_san_ramon.jpg',
+      'imgDesc' : 'View from GE\'s Software Center of Excellence in San Ramon, California.',
+      'text': 'I joined GE\'s <a href="http://www.ge.com/careers/culture/recruiting-development/information-technology-leadership-program/united-states"> Information Technology Leadership Program</a> in June 2013. The job gives recent graduates the chance to work in four completely different IT roles over the course of two years, with graduate coursework built in throughout. </br>Currently I work as a Mobile Engineer on the High Impact Innovation Team, developing native and hybrid applications for GE\'s various buisness units.'
+    },
+    {
+      'title': 'Next Gen Ops API Architect',
       'date': 'Sept. 2014',
       'imgSrc': 'ge_itlp100_pitch.jpg',
       'imgDesc' : 'My team\'s final pitchout during ITLP initial training. We earned <a href="http://instagram.com/p/chefBfHLLW/">top honors</a> for our solution.',
-      'text': 'I joined GE\'s <a href="http://www.ge.com/careers/culture/recruiting-development/information-technology-leadership-program/united-states"> Information Technology Leadership Program</a> in June 2013. The job gives recent graduates the chance to work in four completely different IT roles over the course of two years, with graduate coursework built in throughout. </br>Currently I work as a Cloud Architect, developing APIs to enable GE’s Next Generation Operations initiatives.'
+      'text': 'For my third rotation, I worked as an API architect for GE’s Next Generation Operations initiatives. Partnering directly with the COO of IT at the company, I launched and delivered the first iteration of GE\'s next generation app tracking solution.</br> As the sole developer of the implementation, I built a RESTful API with Node.js/PostgreSQL and integrated it with our company-wide OAuth2 provider for identity management. The application was one of the initial AWS deployments within the company, giving me the chance to document infrastructure best practices (Bash scripts, CloudFormation templates, etc) and partner with our cloud service owners to improve the developer experience within GE\'s VPCs.'
     },
     {
       'title': 'Front-End Engineer',
       'imgSrc': 'node_road.jpg',
       'date': 'Mar. 2014',
-      'text': 'Last rotation I worked as a front end engineer, helping to launch a new home page for GE\'s 300,000+ employees. My main deliverables involved building modules and unit tests for one of the largest implementations of Angular.js in the world. I also got the chance to work across our tech stack <a href=" http://en.wikipedia.org/wiki/MEAN">(MEAN)</a>, refactoring the existing API server and building out new routes/3rd party integrations.'
+      'text': 'I worked as a front end engineer during my second rotation, helping to launch a new home page for GE\'s 300,000+ employees. My main deliverable was building various components for one of the largest implementations of Angular.js in the world but I also got the chance to work across our <a href=" http://en.wikipedia.org/wiki/MEAN">tech stack</a>, refactoring the existing API server and building out new routes/3rd party integrations.'
     },
     {
       'title': 'ServiceNow Project Manager',
@@ -34,8 +41,7 @@ module.exports = [
     {
       'imgSrc': 'myeasyclass.jpg',
       'title': '<a href="http://myeasyclass.com">MyEasyClass.com</a>',
-      'text': 'For my honors thesis at UConn I developed and launched my first <a href="http://en.wikipedia.org/wiki/Single-page_application"> single page web application</a>. The application was built to fill a need that I saw semester after semester: there was no easy way to browse top ranked courses at my school. Offerings like RateMyProfessors.com were great if you already had a class in mind, but MyEasyClass’ reddit-style layout made it easy to quickly discover other course options.</br>' +
-        '</br>The site was originally created using JQuery, Bootstrap, and <a href="https://parse.com/">Parse</a> (JQuery was eventually replaced with Angular.js).</br> It launched spring of 2013, garnering 1,200+ unique visitors within the first month. During class registration the following fall, MyEasyClass had 5,200+ pageviews and 3,200 unique visitors. Putting this in to perspective, more than 20% of UConn\'s undergraduate population used the site.'
+      'text': 'For my honors thesis at UConn I developed and launched my first <a href="http://en.wikipedia.org/wiki/Single-page_application"> single page web application</a>. The app was built to fill a need that I saw semester after semester: there was no easy way to browse top ranked courses at my school. Offerings like RateMyProfessors.com were great if you already had a class in mind, but MyEasyClass’ reddit-style layout made it easy to quickly discover other course options.</br> The site was originally created using JQuery, Bootstrap, and <a href="https://parse.com/">Parse</a> (JQuery was eventually replaced with Angular.js). When it launched in spring of 2013 more than 1,200+ unique users visited the first month. During class registration the following fall, MyEasyClass had 5,200+ pageviews and 3,200 unique visitors. Putting this in to perspective, more than 20% of UConn\'s undergraduate population used the site.'
     },
     {
       'imgSrc': 'bloomtrends.jpg',
@@ -45,14 +51,13 @@ module.exports = [
     {
       'title': 'travisbloom.me',
       'imgSrc': 'code.jpg',
-      'text': 'My interest in web design/development started during my sophomore year of college. I used online tools like <a href="http://teamtreehouse.com/home">Team Treehouse</a> and <a hreg="http://www.codecademy.com/">Codeacademy</a> to teach myself the basics of HTML, CSS, and Javascript. </br> ' +
-        'This most recent version of travisbloom.me was built as a static, single page blog, with all the section content typed up in a single JSON file. When a new version of the site is deployed, Gulp.js compiles the stories data to a Handlebars.js template and inject the outputted html in to my index file. This setup allows me to easily update stories and add new content to respective sections. '
+      'text': 'My interest in web design/development started during my sophomore year of college. I used online tools like <a href="http://teamtreehouse.com/home">Team Treehouse</a> and <a hreg="http://www.codecademy.com/">Codeacademy</a> to teach myself the basics of HTML, CSS, and Javascript. </br> This most recent version of travisbloom.me was built as a static, single page blog, with all the section content typed up in a single JSON file. When a new version of the site is deployed, Gulp.js compiles the stories data to a Handlebars.js template and inject the outputted html in to my index.html file. This setup allows me to easily update stories and add new content to respective sections. '
     }
   ],
   [
     {
       'imgSrc': 'uconn_husky.jpg',
-      'text': 'I graduated from UConn in May of 2013 with a Degree in Management Information Systems and a cumulative GPA of 3.96. Courses like Accounting, Finance, and Management gave me a solid foundation in business while others like Software Development, Database Design, Data Mining, and Web Development allowed me to explore my passion for technology.'
+      'text': 'I graduated summa cum laude from UConn in May of 2013 with a Degree in Management Information Systems and a cumulative GPA of 3.96. Courses like Accounting, Finance, and Management gave me a solid foundation in business while others like Software Development, Database Design, Data Mining, and Web Development allowed me to explore my passion for technology.'
     },
     {
       'imgSrc': 'uconn_hall_of_fame.jpg',

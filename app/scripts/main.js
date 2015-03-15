@@ -32,9 +32,13 @@ $(function() {
       $('header, main').removeClass('show-aside');
     }
   });
+
   $(document.body).on('swiperight', function() {
     if (!$('main').hasClass('show-aside')) {
       $('header, main').addClass('show-aside');
     }
   });
+  //prevent bounce effect on iOS
+  $(document).on("touchmove", function(evt) { evt.preventDefault() });
+  $(document).on("touchmove", ".scrollable", function(evt) { evt.stopPropagation() });
 });

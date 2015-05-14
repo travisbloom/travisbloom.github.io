@@ -1,6 +1,6 @@
 $(function() {
   'use strict';
-  //attaches the fastClick plugin to the body, improving mobile responsiveness
+    //attaches the fastClick plugin to the body, improving mobile responsiveness
   FastClick.attach(document.body);
   //set the header text to the navIcon's section
   $( '.category-header' ).click(function() {
@@ -18,24 +18,25 @@ $(function() {
  //show header items on scroll
   $('#categories-container').waypoint({
     handler: function() {
-      $('header').toggleClass('scrolling');
+      $('nav').toggleClass('scrolling');
     }
   });
   //toggles the animation class for the sidebar
   $('#aside-toggle').click(function(e) {
     e.preventDefault();
-    $('header, main').toggleClass('show-aside');
+    $('nav, main').toggleClass('show-aside');
   });
+
   //add the sidebar event to swipes
   $(document.body).on('swipeleft', function() {
     if ($('main').hasClass('show-aside')) {
-      $('header, main').removeClass('show-aside');
+      $('nav, main').removeClass('show-aside');
     }
   });
 
   $(document.body).on('swiperight', function() {
     if (!$('main').hasClass('show-aside')) {
-      $('header, main').addClass('show-aside');
+      $('nav, main').addClass('show-aside');
     }
   });
- });
+});

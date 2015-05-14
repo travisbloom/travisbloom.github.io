@@ -36,15 +36,6 @@ gulp.task('inject-hbs', ['compile-hbs'], function () {
     }))
     .pipe(gulp.dest('.tmp'));
 });
-//compiles html file built with templates found in .tmp/templates and the /stories folder
-gulp.task('story-json', function () {
-  function test(e) {
-    console.log(e)
-  }
-  //stories to add to the website
-  return gulp.src('stories/stories.js')
-    .pipe(test);
-});
 /***
  * watch tmp files and app files for development env
  ***/

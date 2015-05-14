@@ -8,7 +8,7 @@ Check out the source: github.com/travisbloom/travisbloom.me
 ******************Follow me on twitter: @TravisBloom**********************
 **************************************************************************
 ***********************************************************************-->
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,12 +17,12 @@ Check out the source: github.com/travisbloom/travisbloom.me
     <meta name="description" content="The personal website of Travis Bloom, an IT professional, full stack engineer, and tech enthusiast working at General Electric.">
     <meta name="author" content="Travis Bloom">
     <!--favicon images-->
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300|Lobster+Two' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300|Lobster+Two' rel='stylesheet'>
     <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/  images/favicons/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
@@ -58,56 +58,55 @@ Check out the source: github.com/travisbloom/travisbloom.me
 <!--****************************************************************
     *************************Header*************************************
     ********************************************************************-->
-<header>
+<nav>
     <!--hamburger icon-->
     <a href="#" id="aside-toggle"></a>
     <!--section header text, shown when section is scrolled-->
     <span id="section-text"></span>
-</header>
+</nav>
 
 <main class="container-fluid">
     <!--****************************************************************
     *************************Intro**************************************
     ********************************************************************-->
-    <section class="row intro">
-        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1" itemscope itemtype="http://data-vocabulary.org/Person">
-            <a href="https://plus.google.com/+TravisBloom223" style="display: none;">Travis Bloom</a>
-            <h1>Hi, I'm <span itemprop="name">Travis</span></h1>
+    <header class="row intro">
+        <hgroup class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+            <h1>Hi, I'm Travis</h1>
             <h2>
-                A full stack engineer working in <span itemprop="affiliation">General Electric</span>'s
-                <a href="http://www.ge.com/careers/culture/recruiting-development/information-technology-leadership-program/united-states"target="_blank"><span itemprop="title">Information Technology Leadership Program</span></a>.
+                A full stack engineer working in General Electric's
+                <a href="http://www.ge.com/careers/culture/recruiting-development/information-technology-leadership-program/united-states" target="_blank">Information Technology Leadership Program</a>.
                 When I'm not developing web apps with Node.js and various JavaScript client side frameworks, I enjoy commenting on technology news/trends on my <a href="http://blog.travisbloom.me/" target="_blank">blog</a> and <a href="https://twitter.com/TravisBloom">@travisbloom</a> on Twitter.
             </h2>
             <h2>
                 To learn more about me click on the sections below.
             </h2>
-        </div>
-    </section>
+        </hgroup>
+    </header>
     <!--Header Icons-->
     <section class="row category-headers">
         <div class="col-xs-4 col-md-2 col-md-offset-3">
-            <div class="category-header" data-target="#section0" data-toggle="collapse" name="work">
+            <div class="category-header" data-target="#section-num-0" data-toggle="collapse" name="work">
                 <img class="icon-img" src="images/tie.png">
                 <img class="icon-text" src="images/worktext.png" alt="Work">
             </div>
         </div>
         <div class="col-xs-4 col-md-2">
-            <div class="category-header" data-target="#section1" data-toggle="collapse" name="projects">
+            <div class="category-header" data-target="#section-num-1" data-toggle="collapse" name="projects">
                 <img class="icon-img" src="images/projects.png">
                 <img class="icon-text" src="images/projectstext.png" alt="Projects">
             </div>
         </div>
         <div class="col-xs-4 col-md-2">
-            <div class="category-header" data-target="#section2" data-toggle="collapse" name="education">
+            <div class="category-header" data-target="#section-num-2" data-toggle="collapse" name="education">
                 <img class="icon-img" src="images/graduation.png">
                 <img class="icon-text" src="images/educationtext.png" alt="Education">
             </div>
         </div>
     </section>
-    <div id="categories-container" class="row">
+    <section id="categories-container">
         <!--stories are injected in here using handlebars templates-->
         @@include('.tmp/templates/story.hbs')
-    </div>
+    </section>
 </main>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
@@ -123,6 +122,7 @@ Check out the source: github.com/travisbloom/travisbloom.me
 <!-- bower:js -->
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/bootstrap/js/collapse.js"></script>
+<script src="../bower_components/jquery-backstretch/jquery.backstretch.js"></script>
 <script src="../bower_components/fastclick/lib/fastclick.js"></script>
 <script src="../bower_components/waypoints/lib/jquery.waypoints.js"></script>
 <!-- endbower -->

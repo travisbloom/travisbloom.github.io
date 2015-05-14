@@ -1,15 +1,15 @@
 .category-headers {
-  margin-top: 50px;
+  margin-bottom: @large-spacing;
   //paint all the respective category headers their color
   .col-xs-4 {
     &:nth-of-type(1) > div {
-      background-color: #a967aa;
+      background-color: @category-1-theme-color;
     }
     &:nth-of-type(2) > div {
-      background-color: #3989c9;
+      background-color: @category-2-theme-color;
     }
     &:nth-of-type(3) > div {
-      background-color: #6dc065;
+      background-color: @category-3-theme-color;
     }
   }
   .category-header {
@@ -35,8 +35,7 @@
       //keep icon centered
       left: 0;
       right: 0;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto;
       transition: all .1s ease-in;
     }
     .icon-img {
@@ -61,25 +60,25 @@
 }
 
 #categories-container {
-  margin-top: 30px;
   section.panel {
     //remove default bootstrap panel stylings
     border: none;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     background-color: inherit;
-    border-radius: 0px;
+    border-radius: 0;
     box-shadow: none;
     article {
-      padding: 200px  0;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-      //in case images don't load, prevent background items from being shown
-      background-color: @background-color;
       position: relative;
-      @media (max-width: @screen-xs-max) {
-        padding: 100px  0;
+      .background {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        //in case images don't load, prevent background items from being shown
+        background-color: @background-color;
       }
       figcaption {
         position:absolute;
@@ -87,56 +86,85 @@
         right: 0;
         border-top-left-radius: 5px;
         padding: 5px 15px 5px 5px;
-        font-size: 14px;
+        font-size: @smaller-font-size;
         font-style: italic;
         color: @background-color;
         opacity:.4;
         transition: all .2s ease-out;
         &:hover {
           opacity: 1;
-          font-size: 14px;
           background: rgba(0, 0, 0, .6);
-        }
-        //hide figure captions on smaller touchscreen devices
-        @media (max-width: @screen-sm-max) {
-          display: none;
         }
       }
       .text-box {
+        margin-top: 200px;
+        margin-bottom: 200px;
         background: rgb(0, 0, 0); /* Fall-back for browsers that don't support rgba */
         background: rgba(0, 0, 0, .8);
         color: @background-color;
-        padding: 25px 25px;
-        border-radius: 25px;
-        font-size: 25px;
-        font-weight: 100;
-        //ensures div will take up space
-        //todo figure out why this is needed
-        float: none;
-        @media (max-width: @screen-md-max) {
-          font-size: 16px;
-          font-weight: 300;
-        }
-        a{
+        padding: @large-spacing @large-spacing;
+        border-radius: @large-spacing / 2;
+        a {
           color: @link-light-color;
         }
-        h3{
-          font-size: 35px;
+        h1 {
+          font-size: @larger-font-size;
           font-weight: 300;
-          margin-bottom: 20px;
           @media (max-width: @screen-xs-max) {
-            font-size: 25px;
+            font-size: @larger-font-size-mobile;
           }
           span {
             font-style: italic;
             font-weight: 100;
             float:right;
-            @media (max-width: @screen-md-max) {
-              display: none;
-            }
+          }
+        }
+        h2 {
+          font-weight: 100;
+          p {
+            padding-top: @regular-spacing;
           }
         }
       }
+      //BACKGROUND COVER, Y U SUCK SO MUCH ON MOBILE???
+      //todo remove this once mobile browsers stop failing
+      @media (max-width: @screen-md-max) {
+        .background, figcaption {
+          display: none;
+        }
+        .text-box {
+          //reset padding to bootstrap column defaults
+          padding: @large-spacing 15px;
+          margin-top: @large-spacing / 2;
+          margin-bottom: @large-spacing / 2;
+          background: none;
+          color: @dark-font-color;
+          a {
+            color: @link-color;
+          }
+          h1 {
+            span {
+              @media (max-width: @screen-md-max) {
+                display: block;
+                float: none;
+                font-weight: 300;
+              }
+            }
+          }
+          h2 {
+            font-weight: 300;
+          }
+        }
+      }
+      @media (max-width: @screen-xs-max) {
+        .text-box {
+          padding: @regular-spacing 15px;
+          border-radius: @regular-spacing / 2;
+          width: 95%;
+          margin: @large-spacing auto;
+        }
+      }
     }
+
   }
 }

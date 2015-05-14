@@ -1,22 +1,24 @@
 {{#each this}}
     <section class="panel">
-        <div id="section{{@index}}" data-parent="#categories-container" class="collapse">
+        <div id="section-num-{{@index}}" data-parent="#categories-container" class="collapse">
           {{#each this}}
-              <article style="background-image: url('images/stories/{{imgSrc}}')">
+              <article class="row">
+                  <!--BACKGROUND COVER, Y U SUCK SO MUCH ON MOBILE???-->
+                  <div class="background" style="background-image: url('images/stories/{{imgSrc}}')"></div>
                   <!--description of the image being used-->
                 {{#if imgDesc}}
                     <figcaption>
                       {{{imgDesc}}}
                     </figcaption>
                 {{/if}}
-                    <div class="text-box col-md-6 col-md-offset-3">
+                    <header class="text-box col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                       {{#if title}}
-                          <h3>
+                          <h1>
                             {{{title}}} {{#if date}}<span>{{date}}</span>{{/if}}
-                          </h3>
+                          </h1>
                       {{/if}}
-                        <p>{{{text}}}</p>
-                    </div>
+                        <h2>{{{text}}}</h2>
+                    </header>
               </article>
           {{/each}}
         </div>

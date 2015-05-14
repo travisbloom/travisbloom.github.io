@@ -1,5 +1,5 @@
 @import "../../bower_components/bootstrap/less/bootstrap.less";
-
+@import "reset.less";
 //@icon-font-path: "../fonts/glyphicons/";
 
 //colors
@@ -7,6 +7,9 @@
 @link-color: #3989C9;
 @link-light-color: #9CC4E4;
 @background-color: #fff;
+@category-1-theme-color: #a967aa;
+@category-2-theme-color: #3989c9;
+@category-3-theme-color: #6dc065;
 //high level dimensions
 @aside-width: 150px;
 @header-height: 40px;
@@ -14,6 +17,28 @@
 @index-aside: 1;
 @index-main: 2;
 @index-header: 3;
+//positioning
+@large-spacing: 50px;
+@regular-spacing: 20px;
+//font-sizing
+@largest-font-size: 60px;
+@larger-font-size: 30px;
+@font-size: 25px;
+@smaller-font-size: 14px;
+
+@largest-font-size-mobile: @largest-font-size / 1.5;
+@larger-font-size-mobile: @larger-font-size / 1.5;
+@font-size-mobile: @font-size / 1.5;
+
+//standard-text
+h2 {
+  font-size: @font-size;
+  line-height: @font-size * 1.5;
+  @media (max-width: @screen-xs-max) {
+    font-size: @font-size-mobile;
+    line-height: @font-size-mobile * 1.5;
+  }
+}
 /********************************
 ********Default Styles***********
 ********************************/
@@ -39,22 +64,24 @@ aside {
   position: fixed;
   z-index: @index-aside;
   width: @aside-width;
-  line-height: 50px;
   //links
   ul {
+    width: @aside-width - (@regular-spacing * 2);
     list-style-type: none;
-    font-size:30px;
-    padding: 0 0;
-    margin: 50px 14px 0 14px;
+    font-size: @larger-font-size;
+    margin: @large-spacing auto;
+    li {
+      margin: @regular-spacing 0;
+    }
   }
 }
 /********************************
 *******main/header styles*******
 ********************************/
-main, header {
+main, nav {
   background-color: @background-color;
   width: 100%;
-  left: 0px;
+  left: 0;
   transition: all .2s ease-in;
   //when hamburger is pressed
   &.show-aside {
@@ -62,26 +89,28 @@ main, header {
   }
 }
 main {
-  height: 100%;
-  position: absolute;
+  position: relative;
   z-index: @index-main;
-  box-shadow: 0px 2px 30px 0px rgba(0,0,0,0.3);
+  box-shadow: -4px -7px 21px -7px rgba(0,0,0,0.3);
 }
 
-header {
-  background-color: @background-color;
+nav {
   position: fixed;
   height: @header-height;
   z-index: @index-header;
   a {
-    padding: 12px 30px;
+    @hamburger-width: 20px;
+    float: left;
+    width: @hamburger-width * 3;
+    height: 100%;
+    display: inline-block;
     //hamburger icon markup
     &:before {
       content: "";
       position: absolute;
-      left: 20px;
-      top: @header-height/3;
-      width: 20px;
+      left: @regular-spacing;
+      top: @header-height / 3.5;
+      width: @hamburger-width;
       height: 3px;
       background: @dark-font-color;
       box-shadow:
@@ -90,14 +119,15 @@ header {
     }
   }
   span {
+    float: left;
     line-height: @header-height;
-    font-size: @header-height/2;
+    font-size: @header-height / 2;
     font-family: 'Lobster Two', sans-serif;
     opacity: 0;
     transition: all .2s ease-out;
   }
   &.scrolling {
-    box-shadow: -1px 0px 27px -4px rgba(0, 0, 0, .3) ;
+    box-shadow: 4px 4px 21px -1px rgba(0,0,0,0.1);
     span {
       opacity: 1;
     }
@@ -107,22 +137,19 @@ header {
 /********************************
 ********Nav Styles**************
 ********************************/
-.intro {
+header.intro {
   text-align: center;
   font-weight: 300;
+  margin-top: @large-spacing;
+  margin-bottom: @large-spacing;
   h1 {
-    font-size: 60px;
-    padding-top: 30px;
+    font-size: @largest-font-size;
     @media (max-width: @screen-xs-max) {
-      font-size: 44px;
+      font-size: @largest-font-size-mobile;
     }
   }
   h2 {
-    font-size: 20px;
-    line-height: 30px;
-    @media (max-width: @screen-xs-max) {
-      line-height: 20px;
-    }
+    margin-top: 20px;
   }
 }
 

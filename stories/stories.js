@@ -39,8 +39,8 @@ module.exports = [
   [
     {
       'imgSrc': 'myeasyclass.jpg',
-      'title': '<a href="http://myeasyclass.com">MyEasyClass.com</a>',
-      'text': '<p>For my honors thesis at UConn I developed and launched my first <a href="http://en.wikipedia.org/wiki/Single-page_application"> single page web application</a>. The app was built to fill a need that I saw semester after semester: there was no easy way to browse top ranked courses at my school. Offerings like RateMyProfessors.com were great if you already had a class in mind, but MyEasyClass’ reddit-style layout made it easy to quickly discover other course options.</p> <p>The site was originally created using JQuery, Bootstrap, and <a href="https://parse.com/">Parse</a> (JQuery was eventually replaced with Angular.js). When it launched in spring of 2013 more than 1,200+ unique users visited the first month. During class registration the following fall, MyEasyClass had 5,200+ pageviews and 3,200 unique visitors. Putting this in to perspective, more than 20% of UConn\'s undergraduate population used the site.</p>'
+      'title': 'MyEasyClass',
+      'text': 'During my Senior year at UConn I developed and launched my first web app. It was built to fill a need that I saw semester after semester: there was no easy way to browse top ranked courses at my school. Offerings like RateMyProfessors.com were great if you already had a class in mind, but MyEasyClass’ reddit-style layout made it easy to quickly discover other course options.</p> <p>The site was originally created using JQuery, Bootstrap, and <a href="https://parse.com/">Parse</a> (JQuery was eventually replaced with Angular.js). When it launched in spring of 2013 more than 1,200+ unique users visited the first month. During class registration the following fall, MyEasyClass had 5,200+ pageviews and 3,200 unique visitors. Putting this in to perspective, more than 20% of UConn\'s undergraduate population used the site.</p>'
     },
     {
       'imgSrc': 'bloomtrends.jpg',

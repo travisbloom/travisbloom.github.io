@@ -50,7 +50,7 @@ html, body {
 
 a {
   color: @link-color;
-  &:hover {
+  &:hover, &:focus {
     text-decoration: none;
   }
 }
@@ -99,27 +99,15 @@ nav {
   height: @header-height;
   z-index: @index-header;
   a {
-    @hamburger-width: 20px;
-    float: left;
-    width: @hamburger-width * 3;
+    padding: 0 @regular-spacing;
     height: 100%;
-    display: inline-block;
-    //hamburger icon markup
-    &:before {
-      content: "";
-      position: absolute;
-      left: @regular-spacing;
-      top: @header-height / 3.5;
-      width: @hamburger-width;
-      height: 3px;
-      background: @dark-font-color;
-      box-shadow:
-      0 @header-height/6 0 0 @dark-font-color,
-      0 @header-height/3 0 0 @dark-font-color;
+    font-size: 24px;
+    color: @dark-font-color;
+    &:hover, &:focus {
+      color: @dark-font-color;
     }
   }
   span {
-    float: left;
     line-height: @header-height;
     font-size: @header-height / 2;
     font-family: 'Lobster Two', sans-serif;

@@ -11,7 +11,7 @@ var stories = require('./stories/stories');
 //compile less file, add autoprefixes
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.less')
-    .pipe($.plumber())
+    //.pipe($.plumber())
     .pipe($.less())
     .pipe($.autoprefixer())
     .pipe(gulp.dest('.tmp/styles'));
@@ -20,8 +20,7 @@ gulp.task('styles', function () {
 gulp.task('compile-hbs', function () {
   //stories to add to the website
   var options = {
-    ignorePartials: true,
-    batch: ['./app/templates/partials']
+    ignorePartials: true
   };
   return gulp.src('app/templates/**/*.hbs')
     .pipe($.compileHandlebars(stories, options))
@@ -102,10 +101,12 @@ gulp.task('images', function () {
   return gulp.src([
     'app/images/**/*'
   ])
-    .pipe($.cache($.imagemin({
-      progressive: true,
-      interlaced: true
-    })))
+    .pipe(
+    $.cache(
+      $.imagemin({
+      optimizationLevel: 7
+    })
+    ))
     .pipe(gulp.dest('dist/images'));
 });
 

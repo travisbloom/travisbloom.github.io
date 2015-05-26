@@ -71,12 +71,14 @@
       position: relative;
       .background {
         position: absolute;
-        height: 100%;
-        width: 100%;
+        height: 102%;
+        width: 102%;
+        filter: blur(3px);
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
         background-position: center;
+        //TODO add this back once Chrome for Mac has fixed its issues
+        //background-attachment: fixed;
         //in case images don't load, prevent background items from being shown
         background-color: @background-color;
       }
@@ -100,7 +102,7 @@
         margin-top: 200px;
         margin-bottom: 200px;
         background: rgb(0, 0, 0); /* Fall-back for browsers that don't support rgba */
-        background: rgba(0, 0, 0, .8);
+        background: rgba(0, 0, 0, .9);
         color: @background-color;
         padding: @large-spacing @large-spacing;
         border-radius: @large-spacing / 2;

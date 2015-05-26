@@ -1,6 +1,5 @@
-@import "../../bower_components/bootstrap/less/bootstrap.less";
 @import "reset.less";
-//@icon-font-path: "../fonts/glyphicons/";
+@import "../../bower_components/bootstrap/less/bootstrap.less";
 
 //colors
 @dark-font-color: #696969;
@@ -101,13 +100,13 @@ nav {
   a {
     padding: 0 @regular-spacing;
     height: 100%;
-    font-size: 24px;
+    font-size: 18px;
     color: @dark-font-color;
     &:hover, &:focus {
       color: @dark-font-color;
     }
   }
-  span {
+  #section-text {
     line-height: @header-height;
     font-size: @header-height / 2;
     font-family: 'Lobster Two', sans-serif;
@@ -116,7 +115,7 @@ nav {
   }
   &.scrolling {
     box-shadow: 4px 4px 21px -1px rgba(0,0,0,0.1);
-    span {
+    #section-text {
       opacity: 1;
     }
   }

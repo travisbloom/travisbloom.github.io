@@ -104,10 +104,17 @@ gulp.task('images', function () {
     .pipe(
     $.cache(
       $.imagemin({
-      optimizationLevel: 7
-    })
+        optimizationLevel: 7
+      })
     ))
     .pipe(gulp.dest('dist/images'));
+});
+
+gulp.task('fonts', function () {
+  return gulp.src([
+    'bower_components/bootstrap/fonts/**/*'
+  ])
+    .pipe(gulp.dest('dist/fonts'));
 });
 
 //move other files to dist folder
@@ -129,7 +136,7 @@ gulp.task('clean', function (cb) {
   ], cb);
 });
 
-gulp.task('build', ['html', 'images', 'extras'], function () {
+gulp.task('build', ['html', 'images', 'extras', 'fonts'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

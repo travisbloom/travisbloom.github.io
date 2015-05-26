@@ -17,7 +17,7 @@ module.exports = [
     },
     {
       'title': 'Front-End Engineer',
-      'imgSrc': 'noderoad.jpg',
+      'imgSrc': 'node_road.jpg',
       'date': 'Mar. 2014',
       'text': '<p>I worked as a front end engineer during my second rotation, helping to launch a new home page for GE\'s 300,000+ employees. My main deliverable was building various components for one of the largest implementations of Angular.js in the world but I also got the chance to work across our <a href=" http://en.wikipedia.org/wiki/MEAN">tech stack</a>, refactoring the existing API server and building out new routes/3rd party integrations.</p>'
     },

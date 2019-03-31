@@ -1,0 +1,15 @@
+---
+title: The WhatsApp Acquisition and Why Mobile Needs to be Kept Simple
+date: '2014-02-25T10:18:21-05:00'
+---
+By now you have probably heard about Facebook’s acquisition of WhatsApp. $19 billion. $320 million per employee. $35 per user. 10% of Facebook’s market cap. These are impressive numbers that beg the question: Why was this small company worth so much?
+
+People attribute WhatsApp’s success to a number of factors: it was heavily focused on emerging markets, developed for OS’ that were [largely ignored in developed nations](http://blog.textit.in/your-path-to-a-%2416b-exit-build-a-j2me-app), and it even shunned data collecting and ads. These all contributed to the app’s success but one of the biggest factors was the simplicity of the product. While Facebook was trying to dominate all things social on the smartphone, WhatsApp focused in on a market they knew had demand.
+
+Facebook on the desktop is a one stop shop for their user’s social experiences. Whether you want to talk with family around the world, invite coworkers to your housewarming party, connect with an old friend, or share memories of a recent vacation, the experience occurs on the same site, using a similar layout, with a consistent experience throughout. This all inclusive clean design is the reason the site succeeded in the late 2000’s while MySpace was falling apart. So when it released its iPhone app in 2008, it made sense to include all of the desktop functionality users had grown to love.
+
+We now know this was a mistake. Mobile users don’t want social apps that try to do everything. They want apps that are simple, straight forward, and do one or two things really well. Look at Instagram. Facebook’s competing app already allowed users to upload photos and like/comment on their friends. Instagram accomplished the same task; they just did it without all the fluff. Focusing on making it as easy as possible to make your photos look great and share directly with your friends gave it the leg up it needed to scare Facebook in to an acquisition.
+
+WhatsApp has captured this simplicity in messaging. Instead of requiring users to create unique usernames, passwords, and link various social media accounts, it focused on what had previously worked and utilized users existing phone numbers. You didn’t need to ‘friend’ anyone to chat, just interact as if it were an SMS app. It’s texting without the carrier fees.
+
+Facebook has been working to understand mobile and has gotten progressively better. In fact, during their last earnings call they reported that [53% of revenue was coming from mobile advertising](http://www.theverge.com/2014/1/29/5358382/facebook-q4-2013-earnings-beat-expectations-on-revenue-and-profits). Products like Messenger and Camera show that the company is shifting its mobile strategy from one comprehensive experience to multiple, focused, single purpose apps. The Instagram and WhatsApp acquisitions are the consequences of their previous all-in-one-app mentality. They serve as a lesson to other established software companies trying to adapt to the new mobile-first world: Keep it simple and the users will follow. 

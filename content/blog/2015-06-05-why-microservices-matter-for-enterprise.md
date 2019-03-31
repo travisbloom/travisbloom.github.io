@@ -1,0 +1,17 @@
+---
+title: Why Microservices Matter for Enterprise
+date: '2015-06-05T12:07:28-04:00'
+---
+Traditionally, enterprise companies follow a standard process for developing applications that splits the architecture in to three distinct layers. First, a client (web/native view) renders and makes requests to a backend system. This server, generally composed of a single codebase that contains a massive set of business logic to handle the various components of the application, retrieves data from a single database.  All three layers are closely coupled and dependent on each other. This model has worked well in the past, but as our organizations begin to move towards a DevOps approach we need to rethink how we build systems.
+
+The issue with this traditional approach is it leads to silos of knowledge, where front end developers, backend engineers, DBAs, and infrastructure personnel all have little to no context about the other components of their application. When a bug is found, one team will check their specific stack of the application, confirm it is not their issue, and pass it along to the next group of engineers. Complex processes and ticketing systems have been developed to overcome the challenges associated with tracking these incidents, but we can do better.
+
+What if an “application” had a dedicated team of engineers who knew the entire stack from top to bottom and could troubleshoot issues as they arrive? There would be no tickets to pass around: a single notification would let the technical distribution list know there’s an issue and the team would collectively troubleshoot to resolve. This sounds like a pipedream for teams that currently manage traditional applications. How can engineers be expected to know every aspect of an application that has layers upon layers of complex business logic designed to fit specific needs? This is where microservices come in.
+
+By breaking up applications in to smaller, single purpose services, engineering teams can take complete ownership of a piece of functionality. This decoupling has a number of advantages:
+
+* Teams won’t be pigeonholed in to a specific technology stack. If some service requires CPU intensive calculations and another merely pipe requests to and from end points, maybe it makes sense to build with both C++ and Node.js respectively.
+* Incidents can be quarantined and rapidly resolved. Isolating functionality makes it easier to pinpoint what service is causing the concern. Teams who understand the entire stack, rather than a single layer, can quickly diagnose the root cause of bugs.
+* Deployments frequency can significantly increase. Microservices have a clearly documented external API. Changes that don’t update this contract can be made without affecting dependent systems. Instead of massive all-hands-on-deck platform upgrades that require months of coordination, services can make daily pushes to production. Industry standards like semantic versioning will ensure that if breaking changes are necessary, dependent systems can migrate at their own pace.
+
+The recent enterprise push towards cloud migration is not just about getting rid of datacenters and reducing cost. It’s about modernizing existing applications and ensuring that, in a world where technology is progressing at an exponential rate, companies can keep up with the rate of innovation. Microservices is one architectural strategy that will aid this transformation and help teams move faster. Sometimes to think bigger, you have to build smaller.

@@ -1,0 +1,9 @@
+{
+  "cSpell.words": ["frontmatter", "pawlicy", "theming", "xlarge"],
+  "files.exclude": {
+    "node_modules": true,
+    ".cache": true,
+    "public": true,
+    ".idea/**": true
+  }
+}

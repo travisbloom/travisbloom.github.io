@@ -1,0 +1,19 @@
+---
+title: Who Dropped The Ball Worse?
+date: '2013-01-09T23:00:00-05:00'
+---
+I want to like Windows 8, I really do. Ever since Steven Sinofsky stood up at Wall Street Journal’s D10 conference a few years ago and revealed the dramatic reimagining of Microsoft’s prized operating system, I''ve been hooked. It just made sense to me: instead of lugging around a tablet and a laptop, why not converge the two? And so I waited…and waited….and waited for October 26th, 2012. I even told friends and family who were considering a new laptop to wait as well and bask in the glory of whatever hardware Microsoft and its OEM partners had in store for us. Well October came and went, and then November followed….and then December. Almost 3 months after Windows 8 was released my thoughts on the launch can be described in two words: utter disappointment.
+
+Don’t get me wrong, I love Windows 8. In fact, [tech review websites love Windows 8 too](http://www.theverge.com/2012/10/23/3537710/windows-8-review). But regardless of how much Microsoft succeeded from the software standpoint, the hardware is not there. I don’t know whether I’m more infuriated by the Surface’s attempts to be everything and succeeding at nothing or that not a single Windows 8 Ultrabook from the OEMs has been able to get above an 8.0 score from my tech blog of choice. Both make the situation equally horrific.
+
+Microsoft knew they needed to inspire great hardware for this launched. That was the point of the Surface. A hero device they could show to consumers and be like, “Hey, this is the future of computing, this is what a laptop looks like.” But the Surface wasn't that device. Let’s ignore for a second that they released the full “Pro” version of the Surface **three months** after their official launch date. Let’s ignore the fact that Windows RT cripples the speed of this supposed “iPad dethroning” device. I could spend all day nitpicking but in the end it comes down to one simple thing: unless it’s on a desk, it is NOT a laptop replacement.
+
+The kickstand/Touch Cover thing is really cute, and I initially thought it looked amazing when revealed over the summer. But it is also horribly limiting. The fact of the matter is you have to sacrifice traditional laptop use cases in order to fully appreciate the device. You can’t comfortably sit with the device on your lap and type. No matter how cool the other functions may be that ruins it for the consumer. It’s no longer a “laptop replacement”.
+
+That brings me to the Lenovo Yoga. I want this computer to be my next device. From a form factor, it is EVERYTHING THE SURFACE SHOULD BE. Innovative, daring reimagining of what a laptop is? Check. Design that can fully utilize the potential of touchscreens? Check. Design that ensures the device is just as capable as a traditional laptop? Check. Software that is optimized and works the way it should out of the box? Nope. Just look at the [review](http://www.theverge.com/2012/11/9/3615468/lenovo-ideapad-yoga-13-review): flawed touchscreens, software/performance bugs, and inconsistent touchpads. These are things that Microsoft could have nailed if it had decided to pursue the Yoga’s form factor.
+
+I’ve spent a long time rambling to get to two basic truths about Windows 8:
+* Microsoft dropped the ball when it came to picking a form factor for their “hero device”.
+* The OEMs still cannot do the basic software optimizations needed to offer an acceptable Ultrabook experience.
+
+Maybe Microsoft will release a new product within the Surface family that can actually be used as a laptop. Maybe Lenovo and the other OEMs will release some software patches that give their products the respect Windows 8 deserves. I don’t care which one of the two gets fixed first, but it better happen soon. My patience is growing thin and that 13 inch Macbook Air is starting to look mighty enticing. Get your act together or you’ve lost a loyal customer.

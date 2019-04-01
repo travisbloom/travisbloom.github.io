@@ -90,7 +90,7 @@ const BlogPost: React.SFC<IBlogPostProps> = ({ data, pageContext }) => {
 
   return (
     <Box>
-      <SEO title={post.frontmatter.title} />
+      <SEO title={`${post.frontmatter.title} | Travis Bloom`} />
       <TextContainer px={3} py={3}>
         <Header>
           <InternalLink to="/blog" mx={4}>

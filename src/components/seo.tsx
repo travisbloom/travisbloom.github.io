@@ -26,7 +26,7 @@ export const SEO: React.SFC<ISeoProps> = ({ title, description, image: passedIma
       {({ location }) => {
         const url = addTrailingSlash(fullUrl(pathname || location.pathname))
         return (
-          <Helmet title={title} titleTemplate={'%s | Travis Bloom'} htmlAttributes={{ lang: 'en' }}>
+          <Helmet title={title} htmlAttributes={{ lang: 'en' }}>
             <meta name="description" content={description} />
             <meta name="image" content={image.url} />
             <link rel="canonical" href={url} />
@@ -49,7 +49,7 @@ export const SEO: React.SFC<ISeoProps> = ({ title, description, image: passedIma
 
 SEO.defaultProps = {
   description:
-    'Pawlicy Advisor is bringing transparency to pet insurance. We help you compare breed-specific insurance plans for free. Make sure you get the right plan at the right price.',
+    "Travis Bloom's personal website. Co-founder and CTO @PawlicyAdvisor. JavaScript/GraphQL geek. I love what I do.",
   image: {
     url: 'https://www.pawlicy.com/og-image.jpg',
     height: 707,

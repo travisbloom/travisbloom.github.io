@@ -17,7 +17,7 @@ export const BlogIndex: React.SFC<IBlogIndexProps> = props => {
   return (
     <TextContainer px={3} py={3}>
       <Header />
-      <SEO title="All posts" />
+      <SEO title="All Posts | Travis Bloom" />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (

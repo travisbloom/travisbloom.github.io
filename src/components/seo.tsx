@@ -61,7 +61,7 @@ if (
   APP_CONFIG.environment === 'production' &&
   typeof console !== 'undefined' &&
   console.log &&
-  !isServerRendering
+  !isServerRendering()
 ) {
   console.log(
     `%c 

@@ -1,7 +1,7 @@
 import { isServerRendering } from './utilities/executionEnvironment'
 
 function getEnvironment() {
-  if (isServerRendering) {
+  if (isServerRendering()) {
     return 'production'
   }
   switch (window.location.hostname) {

@@ -29,7 +29,9 @@ const BlogPostContent = styled(Box)`
   }
 
   @media (min-width: ${theme.minSize.small}px) {
-    margin-inline-start: ${theme.space[5]}px;
+    li {
+      margin-inline-start: ${theme.space[5]}px;
+    }
   }
 
   strong {

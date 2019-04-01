@@ -51,7 +51,7 @@ SEO.defaultProps = {
   description:
     "Travis Bloom's personal website. Co-founder and CTO @PawlicyAdvisor. JavaScript/GraphQL geek. I love what I do.",
   image: {
-    url: 'https://www.pawlicy.com/og-image.jpg',
+    url: 'https://s3.amazonaws.com/travisbloom/images/color-logo.png',
     height: 707,
     width: 1351,
   },

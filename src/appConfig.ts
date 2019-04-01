@@ -1,4 +1,9 @@
+import { isServerRendering } from './utilities/executionEnvironment'
+
 function getEnvironment() {
+  if (isServerRendering) {
+    return 'production'
+  }
   switch (window.location.hostname) {
     case 'localhost':
     case '10.0.2.2':

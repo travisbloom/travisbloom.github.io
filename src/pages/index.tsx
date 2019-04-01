@@ -31,8 +31,9 @@ const Index: React.SFC<{}> = () => (
           href="https://www.ge.com/careers/working-at-ge/digital-technology-leadership-program"
           target="_blank"
         >
-          GE.
+          GE
         </ExternalLink>
+        .
       </Heading>
       <Txt fontSize={3}>
         <ExternalLink pr={3} py={3} href="https://twitter.com/TravisBloom" target="_blank">

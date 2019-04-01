@@ -1,4 +1,5 @@
 import React from 'react'
+import '../utilities/sentry'
 import { Global, css } from '@emotion/core'
 import { theme } from '../theme'
 

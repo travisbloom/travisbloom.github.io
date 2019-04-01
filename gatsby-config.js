@@ -71,5 +71,11 @@ module.exports = {
     `gatsby-plugin-emotion`,
     'gatsby-plugin-sass',
     'gatsby-plugin-lodash',
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-23533190-4',
+      },
+    },
   ],
 }

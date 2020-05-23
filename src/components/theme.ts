@@ -43,7 +43,7 @@ export const colors = {
   textMuted: baseColors.gray[6],
 }
 
-export const space = [0, 0.25, 0.5, 1, 1.5, 3].map(n => n + 'rem')
+export const space = [0, 0.25, 0.5, 1, 1.5, 3].map((n) => n + 'rem')
 
 export const breakpoints = ['350px', '576px', '768px', '992px', '1200px']
 

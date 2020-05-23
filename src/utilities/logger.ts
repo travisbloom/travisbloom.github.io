@@ -12,7 +12,7 @@ const log = (level: 'log' | 'warn') => (
   other?: any,
 ) => {
   if (APP_CONFIG.environment !== 'production') {
-    console[level](str, ...[data, other].filter(arg => !!arg))
+    console[level](str, ...[data, other].filter((arg) => !!arg))
   } else {
     Sentry.addBreadcrumb({
       level: consoleToSentryLevelMap[level],

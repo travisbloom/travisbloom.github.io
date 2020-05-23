@@ -29,7 +29,7 @@ SentryLib.init({
   beforeBreadcrumb(breadcrumb) {
     return breadcrumb.category === 'console' ? null : breadcrumb
   },
-  beforeSend: event => {
+  beforeSend: (event) => {
     if (APP_CONFIG.environment === 'local') {
       logger.warn(
         `SENTRY EVENT: ${getEventMessage(event)}${

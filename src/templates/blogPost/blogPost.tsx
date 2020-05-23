@@ -7,7 +7,7 @@ import { styled, Box, Txt, Header, InternalLink, Heading, Flex } from '../../com
 
 const BlogPostContent = styled(Box)`
   font-size: ${theme.fontSizes[3]};
-  line-height: 1.58;
+  line-height: 2;
   p,
   ul {
     margin-bottom: ${theme.space[4]};

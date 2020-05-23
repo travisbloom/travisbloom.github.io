@@ -38,7 +38,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     { resolve: `gatsby-plugin-sharp`, options: { defaultQuality: 99 } },
-    `gatsby-plugin-feed`,
+    // `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

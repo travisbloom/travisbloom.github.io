@@ -10,8 +10,8 @@ export class ErrorBoundary extends React.Component<{}, { error: Error | null }> 
   state = { error: null }
 
   componentDidCatch(error: Error, errorInfo: any) {
-    Sentry.withScope(scope => {
-      Object.keys(errorInfo).forEach(key => {
+    Sentry.withScope((scope) => {
+      Object.keys(errorInfo).forEach((key) => {
         scope.setExtra(key, errorInfo[key])
       })
       scope.setTag('errorViewDisplayed', 'true')

@@ -33,6 +33,7 @@ const BlogPostContent = styled(Box)`
   img {
     max-width: 100%;
     margin: ${theme.space[2]} 0;
+    float: left;
   }
 
   @media (min-width: ${theme.minSize.sm}px) {
@@ -43,15 +44,12 @@ const BlogPostContent = styled(Box)`
     }
   }
 
-  img:nth-child(odd) {
-    float: left;
-  }
-  img:nth-child(even) {
-    float: right;
-  }
   blockquote {
-    padding-left: 40px;
-    border-left: 7px solid ${theme.colors.gray[7]};
+    padding-left: 20px;
+    border-left: 2px solid ${theme.colors.gray[3]};
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: 300;
   }
 
   h2 {

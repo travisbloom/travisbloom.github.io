@@ -1,7 +1,7 @@
 import React from 'react'
 import '../utilities/sentry'
 import { Global, css } from '@emotion/core'
-import { theme } from '../theme'
+import { theme } from '../components/theme'
 
 export const wrapPageElement = ({ element }: { element: React.ReactNode }) => (
   <>
@@ -140,7 +140,7 @@ export const wrapPageElement = ({ element }: { element: React.ReactNode }) => (
     <Global
       styles={css`
         body {
-          color: ${theme.colors.darkGrey};
+          color: ${theme.colors.text};
           font-weight: 500;
           font-family: 'Lato', sans-serif;
           line-height: 1.5;

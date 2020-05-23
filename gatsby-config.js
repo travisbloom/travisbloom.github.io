@@ -6,12 +6,7 @@ module.exports = {
     author: 'travisbloom@gmail.com',
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-compile-es6-packages`,
-      options: {
-        modules: ['toposort', 'react-spring', '@emotion/weak-memoize'],
-      },
-    },
+    'gatsby-plugin-theme-ui',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

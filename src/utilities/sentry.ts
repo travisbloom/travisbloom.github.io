@@ -25,6 +25,7 @@ SentryLib.init({
   logLevel: 2,
   dsn: 'https://8e6ccc2ffded4a568f6f94ef870fa665@sentry.io/1427888',
   environment: APP_CONFIG.environment,
+  enabled: APP_CONFIG.environment !== 'local',
   beforeBreadcrumb(breadcrumb) {
     return breadcrumb.category === 'console' ? null : breadcrumb
   },
@@ -42,7 +43,7 @@ SentryLib.init({
   },
 })
 
-if (!isServerRendering()) {
+if (!isServerRendering) {
   // @ts-ignore
   window.testError = () => SentryLib.captureMessage('test error')
 }

@@ -1,9 +1,19 @@
 {
-  "cSpell.words": ["frontmatter", "pawlicy", "theming", "xlarge"],
+  "cSpell.words": ["frontmatter", "pawlicy", "theming", "travisbloom", "xlarge"],
   "files.exclude": {
     "node_modules": true,
     ".cache": true,
     "public": true,
     ".idea/**": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "editor.scrollBeyondLastLine": false,
+  "files.associations": {
+    "*.json.*": "json"
+  },
+  "[html]": {
+    "editor.formatOnSave": false
   }
 }

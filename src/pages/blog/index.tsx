@@ -1,37 +1,25 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
-import { Layout } from '../../components/layout'
-import { SEO } from '../../components/seo'
-import { Box } from '../../components/box'
-import { Heading } from '../../components/heading'
-import { InternalLink } from '../../components/link'
-import { TextContainer } from '../../components/container'
-import { Flex } from '../../components/flex'
-import { Header } from '../../components/header'
+import { Box, SEO, Header, Flex, Heading, InternalLink } from '../../components'
 
 export const BlogIndex: React.SFC<IBlogIndexProps> = props => {
   const { data } = props
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <TextContainer px={3} py={3}>
+    <Box px={3} py={3} sx={{ maxWidth: 745, mx: 'auto' }}>
       <Header />
       <SEO title="All Posts | Travis Bloom" />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <Box key={node.fields.slug} mb={4}>
-            <Flex justifyContent="space-between" flexDirection={['column', 'row']}>
-              <Heading as="h2" fontSize={[4, 5]}>
-                <InternalLink style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </InternalLink>
+            <InternalLink to={node.fields.slug}>
+              <Box>{node.frontmatter.date}</Box>
+              <Heading mb={2} sx={{ fontSize: [5, 6] }}>
+                {title}
               </Heading>
-              <Box mt={[0, '17px']} css={{ whiteSpace: 'nowrap' }} ml={[0, 3]}>
-                {node.frontmatter.date}
-              </Box>
-            </Flex>
+            </InternalLink>
             <Box
               dangerouslySetInnerHTML={{
                 __html: node.excerpt,
@@ -40,7 +28,7 @@ export const BlogIndex: React.SFC<IBlogIndexProps> = props => {
           </Box>
         )
       })}
-    </TextContainer>
+    </Box>
   )
 }
 
@@ -72,7 +60,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt(pruneLength: 340)
+          excerpt(pruneLength: 100)
           fields {
             slug
           }

@@ -1,36 +1,29 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import { Layout } from '../../components/layout'
 import { SEO } from '../../components/seo'
-import { Heading } from '../../components/heading'
-import { Box } from '../../components/box'
-import { InternalLink } from '../../components/link'
-import { styled } from '../../components/styled'
-import { theme } from '../../theme'
-import { Container, TextContainer } from '../../components/container'
-import { Header } from '../../components/header'
-import { Txt } from '../../components/txt'
-import { Flex } from '../../components/flex'
+import { theme } from '../../components/theme'
+import { styled, Box, Txt, Header, InternalLink, Heading, Flex } from '../../components'
 
 const BlogPostContent = styled(Box)`
-  font-size: ${theme.fontSizes[3]}px;
+  font-size: ${theme.fontSizes[3]};
+  line-height: 1.58;
   p,
   ul {
-    margin-bottom: ${theme.space[3]}px;
+    margin-bottom: ${theme.space[4]};
   }
   ol,
   ul {
     list-style: initial;
   }
   li {
-    margin-bottom: ${theme.space[2]}px;
-    margin-inline-start: ${theme.space[4]}px;
+    margin-bottom: ${theme.space[2]};
+    margin-inline-start: ${theme.space[4]};
   }
 
-  @media (min-width: ${theme.minSize.small}px) {
+  @media (min-width: ${theme.minSize.sm}px) {
     li {
-      margin-inline-start: ${theme.space[5]}px;
+      margin-inline-start: ${theme.space[5]};
     }
   }
 
@@ -39,14 +32,14 @@ const BlogPostContent = styled(Box)`
   }
   img {
     max-width: 100%;
-    margin: ${theme.space[2]}px 0;
+    margin: ${theme.space[2]} 0;
   }
 
-  @media (min-width: ${theme.minSize.small}px) {
+  @media (min-width: ${theme.minSize.sm}px) {
     img {
       max-width: 50%;
       max-height: 50%;
-      margin: ${theme.space[2]}px ${theme.space[2]}px;
+      margin: ${theme.space[2]} ${theme.space[2]};
     }
   }
 
@@ -58,11 +51,11 @@ const BlogPostContent = styled(Box)`
   }
   blockquote {
     padding-left: 40px;
-    border-left: 7px solid ${theme.colors.darkGrey};
+    border-left: 7px solid ${theme.colors.gray[7]};
   }
 
   h2 {
-    font-size: ${theme.fontSizes[4]}px;
+    font-size: ${theme.fontSizes[4]};
     font-weight: bold;
   }
 
@@ -89,36 +82,36 @@ const BlogPost: React.SFC<IBlogPostProps> = ({ data, pageContext }) => {
   const { previous, next } = pageContext
 
   return (
-    <Box>
+    <Box px={3} py={3} sx={{ maxWidth: 745, mx: 'auto' }}>
       <SEO title={`${post.frontmatter.title} | Travis Bloom`} />
-      <TextContainer px={3} py={3}>
-        <Header>
-          <InternalLink to="/blog" mx={4}>
-            Back To All Posts
-          </InternalLink>
-        </Header>
-        <Heading fontSize={[5, 6]}>{post.frontmatter.title}</Heading>
-        <Txt fontWeight={'bold'} fontSize={4}>
-          {post.frontmatter.date}
-        </Txt>
-        <BlogPostContent mt={3} mb={5} dangerouslySetInnerHTML={{ __html: post.html }} />
-        <Flex justifyContent="space-between" flexDirection={['column', 'row']}>
-          <BottomLinks width={[1, 0.5]} mr={[0, 2]} textAlign={['center', 'left']}>
-            {previous && (
-              <InternalLink to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </InternalLink>
-            )}
-          </BottomLinks>
-          <BottomLinks width={[1, 0.5]} textAlign={['center', 'right']} ml={[0, 2]} mt={[3, 0]}>
-            {next && (
-              <InternalLink to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </InternalLink>
-            )}
-          </BottomLinks>
-        </Flex>
-      </TextContainer>
+      <Header>
+        <InternalLink to="/blog" sx={{ px: 3 }}>
+          Back To All Posts
+        </InternalLink>
+      </Header>
+      <Txt>{post.frontmatter.date}</Txt>
+      <Heading>{post.frontmatter.title}</Heading>
+      <BlogPostContent mt={3} mb={5} dangerouslySetInnerHTML={{ __html: post.html }} />
+      <Flex sx={{ justifyContent: 'space-between', flexDirection: ['column', 'row'] }}>
+        <BottomLinks sx={{ width: [1, 0.5], textAlign: ['center', 'right'] }} mr={[0, 2]}>
+          {previous && (
+            <InternalLink to={previous.fields.slug} rel="prev">
+              ← {previous.frontmatter.title}
+            </InternalLink>
+          )}
+        </BottomLinks>
+        <BottomLinks
+          sx={{ width: [1, 0.5], textAlign: ['center', 'right'] }}
+          ml={[0, 2]}
+          mt={[3, 0]}
+        >
+          {next && (
+            <InternalLink to={next.fields.slug} rel="next">
+              {next.frontmatter.title} →
+            </InternalLink>
+          )}
+        </BottomLinks>
+      </Flex>
     </Box>
   )
 }

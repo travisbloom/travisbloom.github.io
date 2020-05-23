@@ -1,7 +1,8 @@
 import { isServerRendering } from './utilities/executionEnvironment'
+import { Environment } from './types'
 
 function getEnvironment() {
-  if (isServerRendering()) {
+  if (isServerRendering) {
     return 'production'
   }
   switch (window.location.hostname) {
@@ -12,7 +13,7 @@ function getEnvironment() {
   return 'production'
 }
 
-const appConfigOptions = {
+const appConfigOptions: Record<string, { environment: Environment }> = {
   local: {
     environment: 'local',
   },

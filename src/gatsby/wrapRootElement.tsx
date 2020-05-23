@@ -1,7 +1,8 @@
+/** @jsx jsx */
 import * as React from 'react'
-import { theme } from '../theme'
+import { theme } from '../components/theme'
 import { ErrorBoundary } from '../components/errorBoundary'
-import { ThemeProvider } from '../components/styled'
+import { jsx, ThemeProvider } from 'theme-ui'
 
 export const wrapRootElement = ({ element }: { element: React.ReactNode }) => {
   return (

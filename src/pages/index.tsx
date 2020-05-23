@@ -18,11 +18,11 @@ const Index: React.SFC<{}> = () => (
         </Heading>
         <Heading as="h2" variant="h2">
           <Box mb={4}>
-            I founded{' '}
+            I currently work at{' '}
             <ExternalLink href="https://www.pawlicy.com/" target="_blank">
               Pawlicy Advisor
-            </ExternalLink>{' '}
-            to help people keep their pets healthy and happy.
+            </ExternalLink>
+            , a company I co-founded to help people keep their pets healthy and happy.
           </Box>
           <Box>
             Previously, I led the engineering team at{' '}
